@@ -1,0 +1,1058 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://data.nasa.gov/ontologies/atmonto/equipment"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://data.nasa.gov/ontologies/atmonto/equipment">
+    <Prefix name="" IRI="https://data.nasa.gov/ontologies/atmonto/equipment"/>
+    <Prefix name="atm" IRI="https://data.nasa.gov/ontologies/atmonto/ATM#"/>
+    <Prefix name="doc" IRI="https://data.nasa.gov/ontologies/atmonto/documentation#"/>
+    <Prefix name="eqp" IRI="https://data.nasa.gov/ontologies/atmonto/equipment#"/>
+    <Prefix name="gen" IRI="https://data.nasa.gov/ontologies/atmonto/general#"/>
+    <Prefix name="nas" IRI="https://data.nasa.gov/ontologies/atmonto/NAS#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="data" IRI="https://data.nasa.gov/ontologies/atmonto/data#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>https://data.nasa.gov/ontologies/atmonto/general</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Created with TopBraid Composer</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#AircraftWeightClass"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#aircraftTypeDesignator"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#wingSpanLowBound"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cicttNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="nas:AircraftEngineManufacturer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DecomposableSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="nas:AviationIndustryManufacturer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aircraft"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numberOfEngines"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AircraftWakeCategory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:icarus#NASA_Ontology"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasComponent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#aircraftWeightHighBound"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#engineTypeDescription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BallBearing"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#wingSpanHighBound"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AircraftCommunicationSystem"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#certificateIssueDate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EngineType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnitAssembly"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AircraftNavigationSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectricalPowerSystem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubsystem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#manufacturedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NavigationAid"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#registrationNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#modelID"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EngineeredSystem"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#aircraftSerialNumber"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAircraftWeightClass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AircraftType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AircraftSubsystem"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maxTakeoffWeightHighBound"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maxTakeoffWeightLowBound"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAircraftModel"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="nas:AirframeManufacturer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAircraftWakeCategory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAircraftEngineType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#aircraftRegistrant"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAircraftType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#modeSCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#aircraftWeightLowBound"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#aircraftModelCertainty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#manufactureYear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AircraftEngine"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#wakeCategoryID"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AircraftModel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numberOfSeats"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#designedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:icarus#AircraftType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:icarus#Aircraft"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:icarus#Icarus_extra_properties"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Aircraft"/>
+        <Class abbreviatedIRI="gen:SequencedItem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aircraft"/>
+        <Class IRI="urn:absolute:icarus#NASA_Ontology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aircraft"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#manufacturedBy"/>
+            <Class abbreviatedIRI="nas:AirframeManufacturer"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AircraftCommunicationSystem"/>
+        <Class IRI="#AircraftSubsystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AircraftEngine"/>
+        <Class IRI="#AircraftSubsystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AircraftEngine"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#manufacturedBy"/>
+            <Class abbreviatedIRI="nas:AircraftEngineManufacturer"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AircraftModel"/>
+        <Class IRI="urn:absolute:icarus#NASA_Ontology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AircraftNavigationSystem"/>
+        <Class IRI="#AircraftSubsystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AircraftSubsystem"/>
+        <Class IRI="#DecomposableSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AircraftType"/>
+        <Class IRI="urn:absolute:icarus#NASA_Ontology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AircraftWakeCategory"/>
+        <Class IRI="urn:absolute:icarus#NASA_Ontology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AircraftWeightClass"/>
+        <Class IRI="urn:absolute:icarus#NASA_Ontology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BallBearing"/>
+        <Class IRI="#UnitAssembly"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DecomposableSystem"/>
+        <Class IRI="#EngineeredSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricalPowerSystem"/>
+        <Class IRI="#AircraftSubsystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EngineType"/>
+        <Class IRI="urn:absolute:icarus#NASA_Ontology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EngineeredSystem"/>
+        <Class IRI="urn:absolute:icarus#NASA_Ontology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NavigationAid"/>
+        <Class IRI="#DecomposableSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnitAssembly"/>
+        <Class IRI="#EngineeredSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:icarus#Aircraft"/>
+        <Class IRI="urn:absolute:icarus#Icarus_extra_properties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:icarus#AircraftType"/>
+        <Class IRI="urn:absolute:icarus#Icarus_extra_properties"/>
+    </SubClassOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasAircraftEngineType"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasAircraftModel"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasAircraftWakeCategory"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasAircraftWeightClass"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isAircraftType"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#designedBy"/>
+        <Class IRI="#AircraftModel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAircraftEngineType"/>
+        <Class IRI="#AircraftType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAircraftModel"/>
+        <Class IRI="#Aircraft"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAircraftWakeCategory"/>
+        <Class IRI="#AircraftType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAircraftWeightClass"/>
+        <Class IRI="#AircraftType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasComponent"/>
+        <Class IRI="#DecomposableSystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSubsystem"/>
+        <Class IRI="#DecomposableSystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAircraftType"/>
+        <Class IRI="#AircraftModel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#manufacturedBy"/>
+        <Class IRI="#EngineeredSystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#designedBy"/>
+        <Class abbreviatedIRI="nas:AirframeManufacturer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAircraftEngineType"/>
+        <Class IRI="#EngineType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAircraftModel"/>
+        <Class IRI="#AircraftModel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAircraftWakeCategory"/>
+        <Class IRI="#AircraftWakeCategory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAircraftWeightClass"/>
+        <Class IRI="#AircraftWeightClass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComponent"/>
+        <Class IRI="#UnitAssembly"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubsystem"/>
+        <Class IRI="#DecomposableSystem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAircraftType"/>
+        <Class IRI="#AircraftType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#manufacturedBy"/>
+        <Class abbreviatedIRI="nas:AviationIndustryManufacturer"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#aircraftModelCertainty"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#aircraftSerialNumber"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#aircraftTypeDesignator"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#aircraftWeightHighBound"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#aircraftWeightLowBound"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#certificateIssueDate"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#cicttNumber"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#engineTypeDescription"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#manufactureYear"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#maxTakeoffWeightHighBound"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#maxTakeoffWeightLowBound"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#modeSCode"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#modelID"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#numberOfEngines"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#numberOfSeats"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#registrationNumber"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#wakeCategoryID"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#wingSpanHighBound"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#wingSpanLowBound"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#aircraftModelCertainty"/>
+        <Class IRI="#Aircraft"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#aircraftRegistrant"/>
+        <Class IRI="#Aircraft"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#aircraftSerialNumber"/>
+        <Class IRI="#Aircraft"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#aircraftTypeDesignator"/>
+        <Class IRI="#AircraftType"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#aircraftWeightHighBound"/>
+        <Class IRI="#AircraftWeightClass"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#aircraftWeightLowBound"/>
+        <Class IRI="#AircraftWeightClass"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#certificateIssueDate"/>
+        <Class IRI="#Aircraft"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cicttNumber"/>
+        <Class IRI="#AircraftModel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#engineTypeDescription"/>
+        <Class IRI="#EngineType"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#manufactureYear"/>
+        <Class IRI="#EngineeredSystem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#maxTakeoffWeightHighBound"/>
+        <Class IRI="#AircraftWakeCategory"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#maxTakeoffWeightLowBound"/>
+        <Class IRI="#AircraftWakeCategory"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#modeSCode"/>
+        <Class IRI="#Aircraft"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#modelID"/>
+        <Class IRI="#EngineeredSystem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numberOfEngines"/>
+        <Class IRI="#Aircraft"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numberOfEngines"/>
+        <Class IRI="#AircraftModel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numberOfSeats"/>
+        <Class IRI="#Aircraft"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#registrationNumber"/>
+        <Class IRI="#Aircraft"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#wakeCategoryID"/>
+        <Class IRI="#AircraftWakeCategory"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#wingSpanHighBound"/>
+        <Class IRI="#AircraftWakeCategory"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#wingSpanLowBound"/>
+        <Class IRI="#AircraftWakeCategory"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#aircraftModelCertainty"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#aircraftRegistrant"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#aircraftSerialNumber"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#aircraftTypeDesignator"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#aircraftWeightHighBound"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#aircraftWeightLowBound"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#certificateIssueDate"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cicttNumber"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#engineTypeDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#manufactureYear"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#maxTakeoffWeightHighBound"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#maxTakeoffWeightLowBound"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#modeSCode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#modelID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#numberOfEngines"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#numberOfSeats"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#registrationNumber"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#wakeCategoryID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#wingSpanHighBound"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#wingSpanLowBound"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Aircraft</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A physical realization of an aircraft, produced according to the specifications defined for a specific model type.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Aircraft</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Aircraft</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AircraftCommunicationSystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An aircraft subsystem involving all voice and data communications functions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AircraftCommunicationSystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Aircraft communication system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AircraftEngine</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An aircraft engine is the component of the propulsion system for an aircraft that generates mechanical power.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AircraftEngine</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Aircraft engine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AircraftModel</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An aircraft model represents a generic specification that describes the characteristics of a specific type of aircraft to be manufactured.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AircraftModel</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Aircraft model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AircraftNavigationSystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An aircraft subsystem responsible for navigation functions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AircraftNavigationSystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Aircraft navigation system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AircraftSubsystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An engineering subsystem of an aircraft.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AircraftSubsystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Aircraft subsystem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AircraftType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An aircraft type represents a set of related aircraft models. Each type corresponds to one of the FAA&apos;s aircraft type designators (e.g., B777 covers all Boeing 777 models).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AircraftType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Aircraft Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AircraftWakeCategory</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies a category of aircraft according to their wake turbulance characteristics (including takeoff weight and wingspan). These categories are useful for the purpose of FAA separation assurance. See FAA Order JO 7110.659B, Wake Turbulence Recategorization, effective March 01, 2015.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AircraftWakeCategory</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Aircraft Wake Category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AircraftWeightClass</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies a category of aircraft that can be used to partition aircraft according to their weight.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AircraftWeightClass</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Aircraft Weight Class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BallBearing</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A unit assembly in an aircraft mechanical subsystem, a ball bearing is positioned between a wheel and a fixed axle, in which the rotating part and the stationary part are separated by a ring of small solid metal balls that reduce friction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BallBearing</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ball bearing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DecomposableSystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A complex engineering system that can be further decomposed into a set of decomposable subsystems and primitive components.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DecomposableSystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Decomposable system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ElectricalPowerSystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An aircraft subsystem responsible for generating and distributing electrical power.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ElectricalPowerSystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Electrical power system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EngineType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Represents different generic types of aircraft engines.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EngineType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Engine Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EngineeredSystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Represents engineered systems as either decomposable or non-decomposible subsystems.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EngineeredSystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Engineered system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NavigationAid</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A navaid (navigational aid) is an engineered system on the ground that airplanes can detect based on their emission of radio signals that enable the aircraft to navigate. Modern examples include NDBs and VORs, which both transmit radio signals that aircraft can follow and home in on.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NavigationAid</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Navigation aid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#UnitAssembly</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A primitive, non-decomposible component in an engineered system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UnitAssembly</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Unit assembly</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#aircraftModelCertainty</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A numeric measure between 0 and 1 reflecting how certain the eqp:hasAircraftModel link is to be correct between the aircraft and the model. A value of one indicates 100% certainty. A lesser value is not to be taken as a percentage, but is a heuristic similarity value taken from the scoring of the TF/IDF similarity assessment performed between the FAA aircraft make/model in the FAA registration database and ICAO make/model names used in the ontology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#aircraftModelCertainty</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">aircraft model certainty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#aircraftRegistrant</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The name of the entity that registered the aircraft with the FAA.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#aircraftRegistrant</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">aircraft registrant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#aircraftSerialNumber</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The manufacturer serial number of the aircraft.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#aircraftSerialNumber</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">serial number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#aircraftTypeDesignator</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The type designator code for this type of aircraft (e.g., B777).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#aircraftTypeDesignator</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">aircraft type designator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#aircraftWeightHighBound</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The upper bound of the aircraft weight category.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#aircraftWeightHighBound</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">aircraft weight high bound</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#aircraftWeightLowBound</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The lower bound of the aircraft weight category.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#aircraftWeightLowBound</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">aircraft weight low bound</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#certificateIssueDate</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The date that an operating certificate was issued to the aircraft.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#certificateIssueDate</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">certificate issue date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cicttNumber</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CAST/ICAO Common Taxonomy Team (CICTT) identifier for this model as specified by the International Aircraft Categorisation And Identification Standard (IACIS).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cicttNumber</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CICTT number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#designedBy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links an aircraft model to the airframe manufacturer that designed the model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#designedBy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">designed by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#engineTypeDescription</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A text description of the engine type characteristics.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#engineTypeDescription</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">engine type description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAircraftEngineType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links an aircraft type to the type of engine it uses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAircraftEngineType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has aircraft engine type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAircraftModel</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a specific aircraft to its model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAircraftModel</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has aircraft model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAircraftWakeCategory</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links an aircraft model to its wake category.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAircraftWakeCategory</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has aircraft wake category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAircraftWeightClass</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links an aircraft model to its weight class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAircraftWeightClass</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has aircraft weight class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasComponent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Connects an engineered system to its primitive components.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasComponent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSubsystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Connects an engineered system to its subsystems.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSubsystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has subsystem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isAircraftType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links an aircraft model to its type, where the type represents a set of related models.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isAircraftType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is aircraft type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#manufactureYear</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The year the system was manufactured.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#manufactureYear</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">manufacture year</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#manufacturedBy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A link to the entity that manufactured the system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#manufacturedBy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">manufactured by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#maxTakeoffWeightHighBound</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The upper bound of the maximum takeoff weight for this category.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#maxTakeoffWeightHighBound</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">max takeoff weight high bound</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#maxTakeoffWeightLowBound</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The lower bound of the maximum takeoff weight for this category.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#maxTakeoffWeightLowBound</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">max takeoff weight low bound</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#modeSCode</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The unique Mode S address of the transponder aboard the aircraft. Mode S equipment on aircraft are assigned a unique ICAO 24-bit address or (informally) Mode S hex code upon national registration and this address becomes a part of the aircraft&apos;s Certificate of Registration.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#modeSCode</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mode SCode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#modelID</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The string identifier of the model for this system/subsystem/assembly.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#modelID</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">model ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#numberOfEngines</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The number of engines specified for this aircraft model or found on this aircraft.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#numberOfEngines</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">number of engines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#numberOfSeats</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The number of seats on this aircraft.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#numberOfSeats</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">number of seats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#registrationNumber</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The aircraft FAA registration number (the tail number, or the N-Number in the US).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#registrationNumber</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">registration number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#wakeCategoryID</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The wake category identification character (A through F).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#wakeCategoryID</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">wake category ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#wingSpanHighBound</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The upper bound of the wingspan for this category.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#wingSpanHighBound</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">wing span high bound</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#wingSpanLowBound</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The lower bound of the wingspan for this category.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#wingSpanLowBound</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">wing span low bound</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:icarus#Aircraft</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A physical realization of an aircraft, produced according to the specifications defined for a specific model type.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:icarus#Aircraft</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Aircraft</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:icarus#AircraftType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An aircraft type represents a set of related aircraft models. Each type corresponds to one of the FAA&apos;s aircraft type designators (e.g., B777 covers all Boeing 777 models).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:icarus#AircraftType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Aircraft Type</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

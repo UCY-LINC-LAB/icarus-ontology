@@ -1,0 +1,1803 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://data.nasa.gov/ontologies/atmonto/data"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://data.nasa.gov/ontologies/atmonto/data">
+    <Prefix name="" IRI="https://data.nasa.gov/ontologies/atmonto/data"/>
+    <Prefix name="sp" IRI="http://spinrdf.org/sp#"/>
+    <Prefix name="atm" IRI="https://data.nasa.gov/ontologies/atmonto/ATM#"/>
+    <Prefix name="doc" IRI="https://data.nasa.gov/ontologies/atmonto/documentation#"/>
+    <Prefix name="eqp" IRI="https://data.nasa.gov/ontologies/atmonto/equipment#"/>
+    <Prefix name="gen" IRI="https://data.nasa.gov/ontologies/atmonto/general#"/>
+    <Prefix name="nas" IRI="https://data.nasa.gov/ontologies/atmonto/NAS#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="spl" IRI="http://spinrdf.org/spl#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="data" IRI="https://data.nasa.gov/ontologies/atmonto/data#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="spin" IRI="http://spinrdf.org/spin#"/>
+    <Import>https://data.nasa.gov/ontologies/atmonto/ATM</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Created with TopBraid Composer</Literal>
+    </Annotation>
+    <Declaration>
+        <ObjectProperty IRI="#hasSkyCondition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#weatherQualifier"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#meteorologicalConditionStatus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWeatherCondition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#totalAirborneDelay"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#surfaceWindDirectionStatus"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#FixFlow"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#metarReportModifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SurfaceWindCondition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#departureDemand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeatherCondition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#limitedVisibilityDistance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasVisibilityCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:icarus#NASA_Ontology"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#topAltitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#seaLevelPressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RunwayStatusData"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lowCeilingWITIhourly"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#windDirectionUpper"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dataIntervalEndTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#etmsDepartures"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#aspmFlightRules"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSurfaceWindCondition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lowCeilingWITIdaily"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#metarReportString"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CloudLayer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tafReportType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#windDirectionLower"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#weatherIntensity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#scheduledDepartures"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#metarReportType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#edctDepartureHold"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#airportDepartureRate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#oagGateDepartureDelay"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hourlyPrecipitation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cloudType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#airportArrivalRate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AirportStatisticsData"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#scheduledArrivals"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ceiling"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#baseAltitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#weatherPhenomenon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SkyCondition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#oagArrivalDelay"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dewpointTemperature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cloudCover"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lowVisibilityWITIhourly"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lowVisibilityWITIdaily"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="sp:arg"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#runwayStatus"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://spinrdf.org/arg#property"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#surfaceGustSpeed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rapidityOfWeatherChange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VisibilityCondition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#highWindWITIdaily"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#forecastingAirport"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#windShearHeight"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMeteorologicalCondition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#highWindWITIhourly"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://spinrdf.org/arg#class"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#metConditionProbability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMeteorologicalReport"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dataIntervalStartTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#surfaceTemperature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#runwaySurfaceFriction"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#windDirectionFixed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tafReportString"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#weatherProximity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeteorologicalCondition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#arrivalDemand"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#surfaceWindSpeed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CloudLayerProfile"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#unlimitedVisibility"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#etmsArrivals"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeteorologicalReport"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCloudLayerProfile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAirportData"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#forecastIssueTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#edctArrivalHold"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#metarStationHasPrecipitationSensor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#runwayVisibleRange"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#runwayReportedOn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:icarus#SkyCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:icarus#Icarus_extra_properties"/>
+    </Declaration>
+    <SubClassOf>
+        <Class abbreviatedIRI="atm:AircraftFlowCapacity"/>
+        <Class IRI="urn:absolute:icarus#NASA_Ontology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="nas:RunwayVisibleRangeMeasurement"/>
+        <Class IRI="urn:absolute:icarus#NASA_Ontology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AirportStatisticsData"/>
+        <Class IRI="urn:absolute:icarus#NASA_Ontology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AirportStatisticsData"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#aspmFlightRules"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">I</Literal>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">V</Literal>
+            </DataOneOf>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AirportStatisticsData"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#aspmFlightRules"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CloudLayer"/>
+        <Class abbreviatedIRI="gen:SequencedItem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CloudLayer"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#cloudCover"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">broken clouds</Literal>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">clear</Literal>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">few clouds</Literal>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">overcast</Literal>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">scattered clouds</Literal>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">vertical visibility layer</Literal>
+            </DataOneOf>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CloudLayer"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#cloudType"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">altocumulus castellanus</Literal>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cumulonimbus</Literal>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">towering cumulus</Literal>
+            </DataOneOf>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CloudLayer"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#cloudCover"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CloudLayer"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#cloudType"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CloudLayerProfile"/>
+        <Class abbreviatedIRI="gen:Sequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CloudLayerProfile"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="gen:hasSequencedItem"/>
+            <Class IRI="#CloudLayer"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeteorologicalReport"/>
+        <Class IRI="urn:absolute:icarus#NASA_Ontology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeteorologicalReport"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#meteorologicalConditionStatus"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">forecast</Literal>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">observed</Literal>
+            </DataOneOf>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeteorologicalReport"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#meteorologicalConditionStatus"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RunwayStatusData"/>
+        <Class IRI="urn:absolute:icarus#NASA_Ontology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RunwayStatusData"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#runwayStatus"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">closed</Literal>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">open</Literal>
+            </DataOneOf>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SkyCondition"/>
+        <Class IRI="#MeteorologicalCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SurfaceWindCondition"/>
+        <Class IRI="#MeteorologicalCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SurfaceWindCondition"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#surfaceWindDirectionStatus"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">fixed</Literal>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">variable</Literal>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">varyingWithinRange</Literal>
+            </DataOneOf>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SurfaceWindCondition"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#surfaceWindDirectionStatus"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VisibilityCondition"/>
+        <Class IRI="#MeteorologicalCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeatherCondition"/>
+        <Class IRI="#MeteorologicalCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:icarus#SkyCondition"/>
+        <Class IRI="urn:absolute:icarus#Icarus_extra_properties"/>
+    </SubClassOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#forecastingAirport"/>
+        <ObjectProperty IRI="#hasMeteorologicalReport"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#runwayVisibleRange"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAirportData"/>
+        <Class abbreviatedIRI="nas:Airport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCloudLayerProfile"/>
+        <Class IRI="#SkyCondition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMeteorologicalCondition"/>
+        <Class IRI="#AirportStatisticsData"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMeteorologicalReport"/>
+        <Class abbreviatedIRI="nas:Airport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSkyCondition"/>
+        <Class IRI="#MeteorologicalReport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSurfaceWindCondition"/>
+        <Class IRI="#MeteorologicalReport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasVisibilityCondition"/>
+        <Class IRI="#MeteorologicalReport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWeatherCondition"/>
+        <Class IRI="#MeteorologicalReport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#runwayReportedOn"/>
+        <Class IRI="#RunwayStatusData"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#runwayVisibleRange"/>
+        <Class IRI="#VisibilityCondition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#forecastingAirport"/>
+        <Class abbreviatedIRI="nas:Airport"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAirportData"/>
+        <Class IRI="#AirportStatisticsData"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCloudLayerProfile"/>
+        <Class IRI="#CloudLayerProfile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSkyCondition"/>
+        <Class IRI="#SkyCondition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSurfaceWindCondition"/>
+        <Class IRI="#SurfaceWindCondition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasVisibilityCondition"/>
+        <Class IRI="#VisibilityCondition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWeatherCondition"/>
+        <Class IRI="#WeatherCondition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#runwayReportedOn"/>
+        <Class abbreviatedIRI="nas:PhysicalRunway"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#runwayVisibleRange"/>
+        <Class abbreviatedIRI="nas:RunwayVisibleRangeMeasurement"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#airportArrivalRate"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#airportDepartureRate"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#arrivalDemand"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#aspmFlightRules"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#departureDemand"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#edctArrivalHold"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#edctDepartureHold"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#etmsArrivals"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#etmsDepartures"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#highWindWITIdaily"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#highWindWITIhourly"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#lowCeilingWITIdaily"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#lowCeilingWITIhourly"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#lowVisibilityWITIdaily"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#lowVisibilityWITIhourly"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#metarReportModifier"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#metarReportString"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#metarReportType"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#oagArrivalDelay"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#oagGateDepartureDelay"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#runwayStatus"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#runwaySurfaceFriction"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#scheduledArrivals"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#scheduledDepartures"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#totalAirborneDelay"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#airportArrivalRate"/>
+        <Class IRI="#AirportStatisticsData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#airportDepartureRate"/>
+        <Class IRI="#AirportStatisticsData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#arrivalDemand"/>
+        <Class IRI="#AirportStatisticsData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#aspmFlightRules"/>
+        <Class IRI="#AirportStatisticsData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#baseAltitude"/>
+        <Class IRI="#CloudLayer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ceiling"/>
+        <Class IRI="#SkyCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cloudCover"/>
+        <Class IRI="#CloudLayer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cloudType"/>
+        <Class IRI="#CloudLayer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#departureDemand"/>
+        <Class IRI="#AirportStatisticsData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#edctArrivalHold"/>
+        <Class IRI="#AirportStatisticsData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#edctDepartureHold"/>
+        <Class IRI="#AirportStatisticsData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#etmsArrivals"/>
+        <Class IRI="#AirportStatisticsData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#etmsDepartures"/>
+        <Class IRI="#AirportStatisticsData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#highWindWITIdaily"/>
+        <Class IRI="#AirportStatisticsData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#highWindWITIhourly"/>
+        <Class IRI="#AirportStatisticsData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hourlyPrecipitation"/>
+        <Class IRI="#WeatherCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#limitedVisibilityDistance"/>
+        <Class IRI="#VisibilityCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lowCeilingWITIdaily"/>
+        <Class IRI="#AirportStatisticsData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lowCeilingWITIhourly"/>
+        <Class IRI="#AirportStatisticsData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lowVisibilityWITIdaily"/>
+        <Class IRI="#AirportStatisticsData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lowVisibilityWITIhourly"/>
+        <Class IRI="#AirportStatisticsData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#metConditionProbability"/>
+        <Class IRI="#MeteorologicalReport"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#meteorologicalConditionStatus"/>
+        <Class IRI="#MeteorologicalReport"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#oagArrivalDelay"/>
+        <Class IRI="#AirportStatisticsData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#oagGateDepartureDelay"/>
+        <Class IRI="#AirportStatisticsData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#runwayStatus"/>
+        <Class IRI="#RunwayStatusData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#runwaySurfaceFriction"/>
+        <Class IRI="#RunwayStatusData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#scheduledArrivals"/>
+        <Class IRI="#AirportStatisticsData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#scheduledDepartures"/>
+        <Class IRI="#AirportStatisticsData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#surfaceGustSpeed"/>
+        <Class IRI="#SurfaceWindCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#surfaceWindDirectionStatus"/>
+        <Class IRI="#SurfaceWindCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#surfaceWindSpeed"/>
+        <Class IRI="#SurfaceWindCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#topAltitude"/>
+        <Class IRI="#CloudLayer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#totalAirborneDelay"/>
+        <Class IRI="#AirportStatisticsData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#unlimitedVisibility"/>
+        <Class IRI="#VisibilityCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#weatherIntensity"/>
+        <Class IRI="#WeatherCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#weatherPhenomenon"/>
+        <Class IRI="#WeatherCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#weatherProximity"/>
+        <Class IRI="#WeatherCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#weatherQualifier"/>
+        <Class IRI="#WeatherCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#windDirectionFixed"/>
+        <Class IRI="#SurfaceWindCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#windDirectionLower"/>
+        <Class IRI="#SurfaceWindCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#windDirectionUpper"/>
+        <Class IRI="#SurfaceWindCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#windShearHeight"/>
+        <Class IRI="#SurfaceWindCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#airportArrivalRate"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#airportDepartureRate"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#arrivalDemand"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#aspmFlightRules"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#baseAltitude"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ceiling"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cloudCover"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cloudType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dataIntervalEndTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dataIntervalStartTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#departureDemand"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dewpointTemperature"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#edctArrivalHold"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#edctDepartureHold"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#etmsArrivals"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#etmsDepartures"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#forecastIssueTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#highWindWITIdaily"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#highWindWITIhourly"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hourlyPrecipitation"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#limitedVisibilityDistance"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lowCeilingWITIdaily"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lowCeilingWITIhourly"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lowVisibilityWITIdaily"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lowVisibilityWITIhourly"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#metConditionProbability"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#metarReportModifier"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#metarReportString"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#metarReportType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#metarStationHasPrecipitationSensor"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#meteorologicalConditionStatus"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#oagArrivalDelay"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#oagGateDepartureDelay"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#rapidityOfWeatherChange"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#runwayStatus"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#runwaySurfaceFriction"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#scheduledArrivals"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#scheduledDepartures"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#seaLevelPressure"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#surfaceGustSpeed"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#surfaceTemperature"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#surfaceWindDirectionStatus"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#surfaceWindSpeed"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tafReportString"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tafReportType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#topAltitude"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#totalAirborneDelay"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#unlimitedVisibility"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#weatherIntensity"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#weatherPhenomenon"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#weatherProximity"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#weatherQualifier"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#windDirectionFixed"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#windDirectionLower"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#windDirectionUpper"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#windShearHeight"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AirportStatisticsData</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Represents a collection of airport data for a given time period, as reported by the FAA&apos;s ASPM system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AirportStatisticsData</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Airport Statistics Data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CloudLayer</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Represents a cloud layer, providing its bottom and top altitude, its cloud type, and its degree of coverage.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CloudLayer</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cloud layer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CloudLayerProfile</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A sequence of cloud layers, ordered from the ground upward. Represents cloud conditions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CloudLayerProfile</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cloud layer profile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MeteorologicalCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A superclass over the various types of meteorological conditions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MeteorologicalCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Meteorological condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MeteorologicalReport</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A representation of the meteorological status for the specified time period, including sky, wind, visibility, and weather subcomponents.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MeteorologicalReport</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Meteorological condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RunwayReport</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A report on runway conditions during a specified interval of time, focusing on runway status (open vs. closed) and surface friction during winter precipitation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RunwayStatusData</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class describes a temporally-dependent set of data about the operating status of a physical runway.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RunwayStatusData</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Runway status data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SkyCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The current or forecast sky conditions, including the ceiling and information on the cloud layers present.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SkyCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sky condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SurfaceWindCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The current or forecast surface wind conditions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SurfaceWindCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Surface wind condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VisibilityCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The current or forecast surface visibility conditions at a given airport or other reporting station.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VisibilityCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Visibility condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WeatherCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The current or forecast weather conditions at a given airport or other reporting station.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WeatherCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Weather condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#airportArrivalRate</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The arrival rate per hour set by the airport during the specified interval. This is the total number of aircraft that can arrive on all runways combined during an hour.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#airportArrivalRate</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">airport arrival rate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#airportDepartureRate</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The departure rate per hour set by the airport during the specified interval. This is the total number of aircraft that can depart from all runways combined during an hour.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#airportDepartureRate</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">airport departure rate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#arrivalDemand</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The number of aircraft intending to arrive at an airport during the specified time period.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#arrivalDemand</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">arrival demand</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#aspmFlightRules</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicates what flight rule conditions the airport is operating under during the specified time period (I-instrument, V-Visual).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#aspmFlightRules</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ASPM Flight Rules</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#baseAltitude</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">For a given homogeonous cloud layer, this is the lowest altitude.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#baseAltitude</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">base altitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ceiling</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The vertical visibility (in feet) measured from the ground to the lowest cloud layer reported as broken or overcast.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ceiling</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ceiling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cloudCover</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">For a given homogenous cloud layer, the type of cloud cover present: clear, few clouds, scattered clouds, broken clouds, overcast, vertical visibility layer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cloudCover</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cloud cover</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cloudType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">For a given homogeneous cloud layer, the type of cloud present: towering cumulus, cumulonimbus, altocumulus castellanus.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cloudType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cloud type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dataIntervalEndTime</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">For temporally-dependent data, the ending time of the data&apos;s period of validity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#dataIntervalEndTime</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">data interval end time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dataIntervalStartTime</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">For temporally-dependent data, the starting time of the data&apos;s period of validity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#dataIntervalStartTime</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">data interval start time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#departureDemand</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The number of aircraft intending to depart during the specified time period.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#departureDemand</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">departure demand</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dewpointTemperature</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The dewpoint temperature in degrees. It is the temperature at which the air can no longer hold all of its water vapor, and some of the water vapor must condense into liquid water. The dew point is always lower than (or equal to) the air temperature.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#dewpointTemperature</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">dewpoint temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#edctArrivalHold</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">EDCT (Estimated Departure Clearance Time) hold minutes at other airports arriving this airport.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#edctArrivalHold</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">EDCT arrival hold</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#edctDepartureHold</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">EDCT (Estimated Departure Clearance Time) hold minutes at other airports departing this airport.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#edctDepartureHold</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">EDCT departure hold</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#etmsArrivals</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Count of arrivals at airport based on ETMS (Enhanced Traffic Management System) data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#etmsArrivals</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">etms arrivals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#etmsDepartures</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Count of departures at airport based on ETMS (Enhanced Traffic Management System) data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#etmsDepartures</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">etms arrivals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#forecastIssueTime</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The time that the report was issued.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#forecastIssueTime</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">forecast issue time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#forecastingAirport</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links to the airport for which the report was compiled.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#forecastingAirport</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">forecasting airport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAirportData</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links an airport to a collection of temporally-dependent data pertinent to the airport conditions, including a variety of data collected in the ASPM system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAirportData</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has airport data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCloudLayerProfile</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a sky condition to a representation of the cloud layers present.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasCloudLayerProfile</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has cloud layer profile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasMeteorologicalCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links meteorological information to the collection of temporally-dependent data associated with an airport.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasMeteorologicalCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has meteorological condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasMeteorologicalReport</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Associates an airport with weather reports generated for that airport.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasMeteorologicalReport</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Meteorological report</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSkyCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Associates a meteorological condition with the details of the sky and cloud conditions at the reporting location..</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSkyCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has sky condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSurfaceWindCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Associates a meteorological condition with the details of the surface wind conditions at the reporting location..</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSurfaceWindCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has surface wind condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasVisibilityCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Associates a meteorological condition with the details of the surface visibility conditions at the reporting location..</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasVisibilityCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has visibility condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasWeatherCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Associates a meteorological condition with the details of the weather conditions at the reporting location.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasWeatherCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has weather condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#highWindWITIdaily</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The high wind weather impacted traffic index (WITI) computed for the airport during the specified timeframe (daily). WITI is an estimate of the number of flights potentially impacted due to inclement weather based on the scheduled traffic demand for a defined geographic region of the air traffic system (in this case, an airport). If the winds at the airport are above a set threshold, then the high wind WITI is set to the number of scheduled arrivals for that timeframe.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#highWindWITIdaily</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">high wind WITI daily</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#highWindWITIhourly</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The high wind weather impacted traffic index (WITI) computed for the airport during the specified timeframe (hourly). WITI is an estimate of the number of flights potentially impacted due to inclement weather based on the scheduled traffic demand for a defined geographic region of the air traffic system (in this case, an airport). If the winds at the airport are above a set threshold, then the high wind WITI is set to the number of scheduled arrivals for that timeframe.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#highWindWITIhourly</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">high wind WITI hourly</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hourlyPrecipitation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Recorded hourly precipitation rate at the measurement station in inches.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hourlyPrecipitation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hourly precipitation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#limitedVisibilityDistance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The visibility distance (in miles) at the reporting station. Only applicable if data:unlimitedVisibility is False.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#limitedVisibilityDistance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">limited visibility distance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#limitedVisibilityDistance</IRI>
+        <IRI>#unlimitedVisibility</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lowCeilingWITIdaily</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The low ceiling weather impacted traffic index (WITI) computed for the airport during the specified timeframe (daily). WITI is an estimate of the number of flights potentially impacted due to inclement weather based on the scheduled traffic demand for a defined geographic region of the air traffic system (in this case, an airport). If the ceiling at the airport is below a set threshold, then the low ceiling WITI is set to the number of scheduled arrivals for that timeframe.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#lowCeilingWITIdaily</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">low ceiling WITI daily</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lowCeilingWITIhourly</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The low ceiling weather impacted traffic index (WITI) computed for the airport during the specified timeframe (hourly). WITI is an estimate of the number of flights potentially impacted due to inclement weather based on the scheduled traffic demand for a defined geographic region of the air traffic system (in this case, an airport). If the ceiling at the airport is below a set threshold, then the low ceiling WITI is set to the number of scheduled arrivals for that timeframe.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#lowCeilingWITIhourly</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">low ceiling WITI hourly</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lowVisibilityWITIdaily</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The low visibility weather impacted traffic index (WITI) computed for the airport during the specified timeframe (daily). WITI is an estimate of the number of flights potentially impacted due to inclement weather based on the scheduled traffic demand for a defined geographic region of the air traffic system (in this case, an airport). If the visibility at the airport is below a set threshold, then the low visibility WITI is set to the number of scheduled arrivals for that timeframe.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#lowVisibilityWITIdaily</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">low visibility WITI daily</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lowVisibilityWITIhourly</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The low visibility weather impacted traffic index (WITI) computed for the airport during the specified timeframe (hourly). WITI is an estimate of the number of flights potentially impacted due to inclement weather based on the scheduled traffic demand for a defined geographic region of the air traffic system (in this case, an airport). If the visibility at the airport is below a set threshold, then the low visibility WITI is set to the number of scheduled arrivals for that timeframe.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#lowVisibilityWITIhourly</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">low visibility WITI hourly</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#metConditionProbability</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">For a forecast meteorological condition, the percent probability associated with the forecast occurrence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#metConditionProbability</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">met condition probability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#metarReportModifier</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Automation status information pertaining to a METAR report: AUTO indicates a fully automated report with no human intervention; COR indicates a corrected observation; no modifier indicates either human observer/reporter or automated report with human oversight.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#metarReportModifier</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">metar report modifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#metarReportString</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Entire text of METAR report.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#metarReportString</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">METAR report string</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#metarReportType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">METAR report type indicator specifies whether this report is a regularly scheduled hourly report (METAR) or a special unscheduled report (SPECI). SPECIs are issued more frequently than hourly when adverse weather conditions prevail.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#metarReportType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">metar report type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#metarStationHasPrecipitationSensor</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A boolean value indicating whether the reporting METAR station has a precipitation sensor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#metarStationHasPrecipitationSensor</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">metar station has precipitation sensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#meteorologicalConditionStatus</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An indicator of whether the meteorological condition is based on actual observations (observed) or on future projections (forecast).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#meteorologicalConditionStatus</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">meteorological condition status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#oagArrivalDelay</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Minutes of OAG (Official Airline Guide) based arrival delay in excess of 15 minutes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#oagArrivalDelay</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">OAG arrival delay</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#oagGateDepartureDelay</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Minutes of OAG (Official Airline Guide) based gate departure delay in excess of 15 minutes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#oagGateDepartureDelay</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">OAG gate departure delay</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#rapidityOfWeatherChange</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicates how fast change is expected from the prior state to the forecast meteorological conditions: &quot;rapid&quot; , &quot;gradual&quot; , &quot;transient&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#rapidityOfWeatherChange</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">rapidity of weather change</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#runwayReportedOn</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Associates a runway status report with the physical runway being measured.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#runwayReportedOn</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">runway reported on</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#runwayStatus</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An indicator of whether the runway is open or closed during the specified period.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#runwayStatus</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">runway status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#runwaySurfaceFriction</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The surface friction (mu) value of the runway for the specified period. Runway surface friction is directly relevant to the braking action which will be available to an aircraft decelerating after touch down, or after a decision to reject a take off.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#runwaySurfaceFriction</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">runway surface friction (mu)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#runwayVisibleRange</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a visibility condition to a runway visible range measurement class instance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#runwayVisibleRange</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">runway visible range</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#scheduledArrivals</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Count of scheduled arrivals. (Most probably from OAG (Official Airline Guide))</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#scheduledArrivals</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">scheduled arrivals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#scheduledDepartures</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Count of scheduled departures. (Most probably from OAG (Official Airline Guide))</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#scheduledDepartures</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">scheduled departures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#seaLevelPressure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sea level pressure measured under the associated meteorological conditions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#seaLevelPressure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">sea level pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#surfaceGustSpeed</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Surface gust speed measured under the associated surface wind conditions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#surfaceGustSpeed</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">surface gust speed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#surfaceTemperature</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Surface temperature measured under the associated meteorological conditions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#surfaceTemperature</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">surface temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#surfaceWindDirectionStatus</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Information about the direction of the wind, either fixed, varyingWithinRange, or variable.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#surfaceWindDirectionStatus</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">surface wind direction status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#surfaceWindSpeed</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The speed in knots of the surface wind.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#surfaceWindSpeed</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">surface wind speed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tafReportString</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The full text of the entire Meteorological report.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#tafReportString</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">taf report string</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tafReportType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type of Terminal Area Forecast (TAF) report: a routine report (TAF), an amended report (AMD), a corrected report (COR), or a delayed report (RTD). An amended TAF is issued when the current TAF no longer adequately describes the ongoing weather or the forecaster feels the TAF is not representative of the current or expected weather.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#tafReportType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">taf report type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#topAltitude</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The top altitude of a homogenous cloud layer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#topAltitude</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">top altitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#totalAirborneDelay</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Total airborne flight delay in minutes for this airport during the specified period.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#totalAirborneDelay</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">total airborne delay</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#unlimitedVisibility</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A binary property indicating whether the visibility conditions are unlimited.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#unlimitedVisibility</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">unlimited visibility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#weatherIntensity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An indicator of the intensity of the weather: light, moderate, heavy.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#weatherIntensity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">weather intensity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#weatherPhenomenon</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Describes the type of weather phenomena experienced during the specified period: drizzle, rain, snow, snow grains, ice crystals, ice pellets, hail, small hail and/or snow pellets, unknown precipitation, mist, fog, smoke, volcanic ash, widespread dust, sand, haze, spray, well-developed dust/sand whirls, squalls, funnel cloud, tornado/waterspout, sandstorm, duststorm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#weatherPhenomenon</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">weather phenomenon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#weatherProximity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Describes the location of the weather phenomena in relation to the reporting station: immediate proximity or in vicinity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#weatherProximity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">weather proximity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#weatherQualifier</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An additional qualifier describing the reported weather phenomenon: shallow, partial, patchy, low drifting, blowing, shower, thunderstorm, freezing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#weatherQualifier</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">weather qualifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#windDirectionFixed</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Steady wind direction (in degrees), when winds are fixed and not variable.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#windDirectionFixed</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">fixed wind direction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#windDirectionLower</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Lower bound (in degrees) of two bounding values describing a variable wind direction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#windDirectionLower</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">lower wind direction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#windDirectionUpper</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Upper bound (in degrees) of two bounding values describing a variable wind direction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#windDirectionUpper</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">lower wind direction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#windShearHeight</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The height in hundreds of feet above ground level associated with a wind shear phenomenon.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#windShearHeight</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">wind shear height</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:icarus#SkyCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The current or forecast sky conditions, including the ceiling and information on the cloud layers present.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:icarus#SkyCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sky condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:icarus#WeatherCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The current or forecast weather conditions at a given airport or other reporting station.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:icarus#WeatherCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Weather condition</Literal>
+    </AnnotationAssertion>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="http://spinrdf.org/arg#class"/>
+        <AnnotationProperty abbreviatedIRI="sp:arg"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="http://spinrdf.org/arg#property"/>
+        <AnnotationProperty abbreviatedIRI="sp:arg"/>
+    </SubAnnotationPropertyOf>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="#FixFlow"/>
+        <IRI>#FixFlow</IRI>
+    </AnnotationPropertyDomain>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

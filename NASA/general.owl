@@ -1,0 +1,480 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://data.nasa.gov/ontologies/atmonto/general"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://data.nasa.gov/ontologies/atmonto/general">
+    <Prefix name="" IRI="https://data.nasa.gov/ontologies/atmonto/general"/>
+    <Prefix name="atm" IRI="https://data.nasa.gov/ontologies/atmonto/ATM#"/>
+    <Prefix name="doc" IRI="https://data.nasa.gov/ontologies/atmonto/documentation#"/>
+    <Prefix name="eqp" IRI="https://data.nasa.gov/ontologies/atmonto/equipment#"/>
+    <Prefix name="gen" IRI="https://data.nasa.gov/ontologies/atmonto/general#"/>
+    <Prefix name="nas" IRI="https://data.nasa.gov/ontologies/atmonto/NAS#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="data" IRI="https://data.nasa.gov/ontologies/atmonto/data#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Created with TopBraid Composer</Literal>
+    </Annotation>
+    <Declaration>
+        <DataProperty IRI="#sequenceLength"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShearSidedPolygonalVolume"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CircularRegion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#altitude"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Polygonal2DRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:icarus#Aviation_related_type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#WKTgeoRepresentation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#longitude"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PolygonBoundary"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSequencedItem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sequence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#centerpoint"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sequenceNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#latitude"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPolygonBoundary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GeographicRegion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#polygonHeight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Region3D"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Region2D"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNextItem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PointLocation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#radius"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SequencedItem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:icarus#NASA_Ontology"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#CircularRegion"/>
+        <Class IRI="#Region2D"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GeographicRegion"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Location"/>
+        <Class IRI="urn:absolute:icarus#NASA_Ontology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PointLocation"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PointLocation"/>
+        <Class IRI="#SequencedItem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PolygonBoundary"/>
+        <Class IRI="#Sequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PolygonBoundary"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSequencedItem"/>
+            <Class IRI="#PointLocation"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Polygonal2DRegion"/>
+        <Class IRI="#Region2D"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Region2D"/>
+        <Class IRI="#GeographicRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Region3D"/>
+        <Class IRI="#GeographicRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sequence"/>
+        <Class IRI="urn:absolute:icarus#NASA_Ontology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SequencedItem"/>
+        <Class IRI="urn:absolute:icarus#NASA_Ontology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShearSidedPolygonalVolume"/>
+        <Class IRI="#Region3D"/>
+    </SubClassOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#centerpoint"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasNextItem"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#centerpoint"/>
+        <Class IRI="#CircularRegion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasNextItem"/>
+        <Class IRI="#SequencedItem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPolygonBoundary"/>
+        <ObjectUnionOf>
+            <Class IRI="#Polygonal2DRegion"/>
+            <Class IRI="#ShearSidedPolygonalVolume"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSequencedItem"/>
+        <Class IRI="#Sequence"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#centerpoint"/>
+        <Class IRI="#PointLocation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasNextItem"/>
+        <Class IRI="#SequencedItem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPolygonBoundary"/>
+        <Class IRI="#PolygonBoundary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSequencedItem"/>
+        <Class IRI="#SequencedItem"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#altitude"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#latitude"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#longitude"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#radius"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#sequenceLength"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#WKTgeoRepresentation"/>
+        <Class IRI="#Location"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#altitude"/>
+        <Class IRI="#PointLocation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#latitude"/>
+        <Class IRI="#PointLocation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#longitude"/>
+        <Class IRI="#PointLocation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#polygonHeight"/>
+        <Class IRI="#ShearSidedPolygonalVolume"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#radius"/>
+        <Class IRI="#CircularRegion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sequenceLength"/>
+        <Class IRI="#Sequence"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sequenceNumber"/>
+        <Class IRI="#SequencedItem"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#WKTgeoRepresentation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#altitude"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#latitude"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#longitude"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#polygonHeight"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#radius"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sequenceLength"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sequenceNumber"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CircularRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A two-dimensional region defined by a geographic centerpoint and radius.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GeographicRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A class representing a demarcated region on or above the surface of the Earth.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Location</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A place defined by a point or a contiguous geographic region.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Location</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PointLocation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A location in three-space defined by a latitude, longitude, and altitude.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PolygonBoundary</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An ordered sequence of point locations where the last point connects back to the first point, closing the polygon.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PolygonBoundary</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Polygon boundary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Polygonal2DRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A two-dimensional region defined by a polygonal boundary.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Region2D</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A two-dimensional geographic region.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Region3D</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A three-dimensional geographic region.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sequence</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An ordered sequence of items.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sequence</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sequence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SequencedItem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The set of items that can be sequenced.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SequencedItem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sequenced item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ShearSidedPolygonalVolume</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A three-dimensional volume defined by a two-dimensional polygon plus a length component that stretches the polygon along an axis perpendicular to the polygon surface.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ShearSidedPolygonalVolume</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Shear sided polygonal volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WKTgeoRepresentation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The WKT string representation of a location. Well-known text (WKT) is a text markup language for representing vector geometry objects on a map, spatial reference systems of spatial objects and transformations between spatial reference systems. WKT is a standards-based representation stored as an alternative to the explicit polygon boundary representation employed in the Ontology (see gen:PolygonBoundary).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WKTgeoRepresentation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Well-Known Text geographic representation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#altitude</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The altitude of a point location.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#altitude</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">altitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#centerpoint</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links to the center point of the 2-D circular region.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#centerpoint</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">centerpoint</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasNextItem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links an item in a sequence to the subsequent item in the sequence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasNextItem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasNext</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPolygonBoundary</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a polygonal region to its boundary representation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPolygonBoundary</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has polygon boundary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSequencedItem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a sequence to each of the items being sequenced.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSequencedItem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasSequencedItem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#latitude</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The latitude of a point location.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#latitude</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">latitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#longitude</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The longitude of a point location.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#longitude</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">longitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#polygonHeight</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the length dimension of a polygonal volume.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#polygonHeight</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">polygon height</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#radius</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The radius of a circular region. Note: Unfortunately, the units are currently dependent the type of circular region defined. This needs to be improved.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#radius</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">radius</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sequenceLength</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The number of items in the ordered sequence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sequenceLength</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">sequence length</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sequenceNumber</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicates the ordered position of this item within the sequence, where 1 signifies the first position in the sequence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sequenceNumber</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">sequenceNumber</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
