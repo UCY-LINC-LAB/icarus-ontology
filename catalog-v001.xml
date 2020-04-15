@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://epidemiology_ontology.owl" uri="Epidemiology-Ontology/epo.owl"/>
     <uri id="Imports Wizard Entry" name="http://rdfs.co/juso/0.1.2" uri="http://rdfs.co/juso/0.1.2/rdf"/>
     <uri id="Imports Wizard Entry" name="https://data.nasa.gov/ontologies/atmontoCore" uri="https://data.nasa.gov/ontologies/atmontoCore/"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1562766466813" name="https://data.nasa.gov/ontologies/atmonto/ATM" uri="NASA/ATM.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1562766466813" name="https://data.nasa.gov/ontologies/atmonto/NAS" uri="NASA/NAS.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1562766466813" name="https://data.nasa.gov/ontologies/atmonto/data" uri="NASA/data.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1562766466813" name="https://data.nasa.gov/ontologies/atmonto/equipment" uri="NASA/equipment.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1562766466813" name="https://data.nasa.gov/ontologies/atmonto/general" uri="NASA/general.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1562766466813" name="duplicate:https://data.nasa.gov/ontologies/atmontoCore" uri="NASA/atmontoCore.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1562766466813" name="duplicate:https://data.nasa.gov/ontologies/atmontoCore" uri="NASA/atmontoCore_v2.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1562766466813" name="duplicate:urn:absolute:icarus" uri="ICARUS_Ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1586525887207" name="http://www.ifomis.org/bfo/1.1" uri="Epidemiology-Ontology/epo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1586525887207" name="https://data.nasa.gov/ontologies/atmonto/ATM" uri="NASA/ATM.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1586525887207" name="https://data.nasa.gov/ontologies/atmonto/NAS" uri="NASA/NAS.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1586525887207" name="https://data.nasa.gov/ontologies/atmonto/data" uri="NASA/data.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1586525887207" name="https://data.nasa.gov/ontologies/atmonto/equipment" uri="NASA/equipment.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1586525887207" name="https://data.nasa.gov/ontologies/atmonto/general" uri="NASA/general.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1586525887207" name="https://data.nasa.gov/ontologies/atmontoCore" uri="NASA/atmontoCore.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1586525887207" name="urn:absolute:icarus" uri="ICARUS_Ontology.owl"/>
     </group>
 </catalog>

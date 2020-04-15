@@ -1,0 +1,2842 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bfo "http://www.ifomis.org/bfo/1.1#" >
+    <!ENTITY TRANS "http://purl.org/obo/owl/TRANS#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY epidemiology_ontology "http://epidemiology_ontology.owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
+    <!ENTITY span2 "http://www.ifomis.org/bfo/1.1/span#" >
+    <!ENTITY snap2 "http://www.infomis.org/bfo/1.1/snap#" >
+    <!ENTITY span "http://www.infomis.org/bfo/1.1/span#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY obo2 "http://epidemiology_ontology.owl#obo:" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:snap2="http://www.infomis.org/bfo/1.1/snap#"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+     xmlns:span2="http://www.ifomis.org/bfo/1.1/span#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bfo="http://www.ifomis.org/bfo/1.1#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:TRANS="http://purl.org/obo/owl/TRANS#"
+     xmlns:obo2="&epidemiology_ontology;obo:"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:epidemiology_ontology="http://epidemiology_ontology.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:span="http://www.infomis.org/bfo/1.1/span#">
+    <Ontology rdf:about="http://epidemiology_ontology.owl">
+        <imports rdf:resource="http://www.ifomis.org/bfo/1.1"/>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <AnnotationProperty rdf:about="&obo;IAO_0000117">
+        <rdfs:label xml:lang="en">definition editor</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">
+Name of editor entering the definition in the file. The definition editor is a point of contact for information regarding the term. The definition editor may be, but is not always, the author of the definition, which may have been worked upon by several people
+</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:http://purl.obolibrary.org/obo/obi</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">definition editor</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </AnnotationProperty>
+    <AnnotationProperty rdf:about="&obo;IAO_0000111">
+        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">
+The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)
+</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:http://purl.obolibrary.org/obo/obi</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">editor preferred term</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </AnnotationProperty>
+    <AnnotationProperty rdf:about="&obo;IAO_0000114">
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000281</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Bill Bug</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">has curation status</obo:IAO_0000111>
+    </AnnotationProperty>
+    <AnnotationProperty rdf:about="&obo;IAO_0000118">
+        <rdfs:label>alternative term</rdfs:label>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+        <rdfs:isDefinedBy rdf:resource="&obo;iao.owl"/>
+    </AnnotationProperty>
+    <AnnotationProperty rdf:about="&obo;IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">
+	For external terms/classes, the ontology from which the term was imported
+	</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:http://purl.obolibrary.org/obo/obi</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">imported from</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+    </AnnotationProperty>
+    <AnnotationProperty rdf:about="&oboInOwl;hasOBONamespace"/>
+    <AnnotationProperty rdf:about="&obo;IAO_0000115">
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">
+	The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.
+	</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:http://purl.obolibrary.org/obo/obi</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </AnnotationProperty>
+    <AnnotationProperty rdf:about="&oboInOwl;hasDbXref"/>
+    <AnnotationProperty rdf:about="&oboInOwl;id"/>
+    <AnnotationProperty rdf:about="&obo;IAO_0000119">
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">
+Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w
+</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">
+formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007
+</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:http://purl.obolibrary.org/obo/obi</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">definition source</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000050 -->
+
+    <ObjectProperty rdf:about="&obo;RO_0000050">
+        <rdfs:label xml:lang="en">part_of</rdfs:label>
+        <obo:IAO_0000412 rdf:resource="&obo;ro.owl"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
+
+    <ObjectProperty rdf:about="&obo;RO_0000056">
+        <rdfs:label xml:lang="en">participates in</rdfs:label>
+        <obo:IAO_0000412 rdf:resource="&obo;ro.owl"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000105 -->
+
+    <ObjectProperty rdf:about="&obo;RO_0000105">
+        <rdfs:label xml:lang="en">location of</rdfs:label>
+        <obo:IAO_0000412 rdf:resource="&obo;ro.owl"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002092 -->
+
+    <ObjectProperty rdf:about="&obo;RO_0002092">
+        <rdfs:label xml:lang="en">happens during</rdfs:label>
+        <obo:IAO_0000412 rdf:resource="&obo;ro.owl"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000001 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000001">
+        <rdfs:label>parameter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Quality"/>
+        <obo:IAO_0000115>A quantity (such as the mean or variance) that characterizes a statistical population and that can be estimated by calculations from sample data</obo:IAO_0000115>
+        <obo:IAO_0000119>WordNet</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000008 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000008">
+        <rdfs:label>biological transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;TRANS_0000005"/>
+        <obo:IAO_0000115>Propagation (multiplication), cyclic development, or a combination of these (cyclopropagative) is required before the arthropod can transmit the infective form of the agent to humans. An incubation period (extrinsic) is required following infection before the arthropod becomes infective. The infectious agent maybe passed vertically to succeeding generations (transovarian transmission); transstadial transmission is its passage from one stage of the life cycle to another, as nymph to adult. Transmission may be by saliva during biting or by regurgitation or deposition on the skin of feces or other material capable of penetrating subsequently through the bite wound or through an area of trauma from scratching or rubbing. Transmission by an infected nonvertebrate host must be differentiated for epidemiological purposes from simple mechanical carriage by a vector in the role of a vehicle. An arthropod in either role is termed a vector.</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000009 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000009">
+        <rdfs:label>transovarian transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000008"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>The infectious agent may be passed vertically to succeeding generations</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000010 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000010">
+        <rdfs:label>transstadial transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000008"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>passage from one stage of the life cycle to another, as nymph to adult.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000012 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000012">
+        <rdfs:label>droplet nuclei-based transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;TRANS_0000009"/>
+        <obo:IAO_0000115>residues that result from evaporation of fluid from droplets emitted by an infected host. Droplet nuclei also may be created purposely by a variety of atomizing devices, or accidentally, as in microbiology laboratories or in abattoirs,rendering plants, or autopsy rooms. They usually remain suspended in the air for long periods.</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000013 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000013">
+        <rdfs:label>dust-based transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;TRANS_0000009"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>The small particles of widely varying size that may arise from soil (fungus spores) or from clothes, bedding, or contaminated floors.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000016 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000016">
+        <rdfs:label>common vehicle transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;TRANS_0000010"/>
+        <obo:IAO_0000118>common vehicle spread</obo:IAO_0000118>
+        <obo:IAO_0000115>Transmission of a disease agent (infectious pathogen, toxic chemical, etc.) from a source that is common to those who acquire the disease. Common vehicles include air, water, food, injected substances. Legionellosis is an example of common vehicle spread in air that has passed through air conditioning equipment contaminated by the causal organism. HIV disease and hepatitis B and C can be spread among illicit drug users by the common vehicle of contaminated needles and syringes. Cholera and many other waterborne diseases are spread by the common vehicle of
+contaminated water.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000019 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000019">
+        <rdfs:label>sexual transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;TRANS_0000007"/>
+        <obo:IAO_0000115>Transmission of infection by sexual contact</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Sexually_Transmitted_Disorder</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/MDR/10040488</oboInOwl:hasDbXref>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000023 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000023">
+        <rdfs:label>carrier</rdfs:label>
+        <equivalentClass rdf:resource="&obo;IDO_0000569"/>
+        <rdfs:subClassOf rdf:resource="&snap;Object"/>
+        <obo:IAO_0000115>A person or animal harboring a specific infectious agent in the absence of discernible clinical disease and serves as a potential source of infection. The carrier state may occur in an individual with an infection that is inapparent throughout its course
+(known as a healthy or asymptomatic carrier) or the carrier state may exist only during the incubation period, convalescence, and postconvalescence of an individual with a clinically recognizable disease (known as an incubatory carrier or convalescent carrier).
+The carrier state may be of short or long duration (temporary or transient carrier or chronic carrier)</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000026 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000026">
+        <rdfs:label>acquaintance network</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;ObjectAggregate"/>
+        <rdfs:seeAlso>http://purl.obolibrary.org/obo/TRANS_0000000</rdfs:seeAlso>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>A group of persons in contact or communication among whom transmission of an infectious agent and of knowledge, behavior, and values is possible and whose social interaction may have health implications.</obo:IAO_0000115>
+        <rdfs:seeAlso>context</rdfs:seeAlso>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000027 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000027">
+        <rdfs:label>containment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>The concept of regional eradication of communicable disease, first proposed by Soper in 1949 for the elimination of smallpox. Containment of a worldwide communicable disease demands a globally coordinated effort, so that countries that have effected an interruption of transmission do not become reinfected following importation from neighboring endemic areas.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000028 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000028">
+        <rdfs:label>elimination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <obo:IAO_0000115>Reduction of case transmission to a predetermined very low level; e.g., elimination of tuberculosis as a public health problem was defined by the WHO (1991) as reduction of prevalence to a level below one case per million population. Compare eradication (of disease).</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000029 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000029">
+        <rdfs:label>contamination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <rdfs:seeAlso>source of infection</rdfs:seeAlso>
+        <obo:IAO_0000115>The presence of an infectious, toxic, or otherwise harmful agent (radioactive material, biological or chemical compounds) on or in the body, also on or in clothes, bedding, toys, medical devices, surgical instruments or dressings, other objects; in
+air, water, and food; or on buildings or land. Pollution may be deemed distinct from contamination: the agent causing the pollution or present in the polluted environment is noxious but not necessarily infectious. Contamination of a body
+surface does not imply a carrier state.</obo:IAO_0000115>
+        <rdfs:seeAlso>http://purl.obolibrary.org/obo/TRANS_0000000</rdfs:seeAlso>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000030 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000030">
+        <rdfs:label>contagion</rdfs:label>
+        <equivalentClass rdf:resource="&obo;TRANS_0000007"/>
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>The transmission of infection by direct contact, droplet spread, or contaminated fomites. These are the modes of transmission specified by Fracastorius (1484-1553) in De Contagione (1546). Contemporary usage is sometimes looser, but use of this term is best restricted to description of infection transmitted by direct contact.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000031 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000031">
+        <rdfs:label>communicable disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Disposition"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000118>infectious disease</obo:IAO_0000118>
+        <rdfs:seeAlso>http://purl.obolibrary.org/obo/TRANS_0000000</rdfs:seeAlso>
+        <obo:IAO_0000115>An illness due to a specific infectious agent or its toxic products that arises through transmission of that agent or its
+products from an infected person, animal, or reservoir to a susceptible host, either directly or indirectly through an intermediate plant or animal host, vector, or the inanimate environment.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000032 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000032">
+        <rdfs:label>communicable period</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;TemporalInterval"/>
+        <obo:IAO_0000115>The time during which an infectious agent may be transferred directly or indirectly from an infected person to another person, from an infected animal to humans, or from an infected person to an animal, including arthropods.</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <rdfs:seeAlso>http://purl.obolibrary.org/obo/TRANS_0000000</rdfs:seeAlso>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000033 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000033">
+        <rdfs:label>primary contact</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000140"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>Person(s) in direct contact or associated with a communicable disease case.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000034 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000034">
+        <rdfs:label>secondary contact</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000140"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>Person(s) in contact or associated with a primary contact.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000035 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000035">
+        <rdfs:label>droplet nuclei</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Object"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&obo;RO_0000056"/>
+                <someValuesFrom rdf:resource="&epidemiology_ontology;EO:0000012"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso>http://purl.obolibrary.org/obo/TRANS_0000000</rdfs:seeAlso>
+        <obo:IAO_0000115>A type of particle implicated in the spread of airborne infection. Droplet nuclei are tiny particles (1-10 um diameter) that represent the dried residue of droplets. They may be formed by (1) evaporation of droplets coughed or sneezed into the air or (2) aerosolization of infective materials.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000036 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000036">
+        <rdfs:label>erradication (of disease)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <obo:IAO_0000115>Termination of all transmission of infection by extermination of the infectious agent through surveillance and containment. Eradication, as in the instance of smallpox, is based on the joint activities of control and surveillance. Regional eradication has been successful with poliomyelitis and in some countries appears close to succeeding for measles. The term elimination is sometimes used to describe
+eradication of diseases such as measles from a large geographic region or political jurisdiction. In 1992, the WHO put it this way: &quot;Eradication is defined as achievement of a status whereby no further cases of a disease occur anywhere, and continued control measures are unnecessary.&quot; Smallpox was eradicated in 1977, based on joint control and surveillance activities.</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000037 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000037">
+        <rdfs:label>generation time</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;TemporalInterval"/>
+        <obo:IAO_0000115>The interval between receipt of infection by the host and the latter&#39;s maximal infectivity. This applies to both clinical cases and inapparent infections. With person-to-person transmission of infection, the interval between cases is determined by the generation time.</obo:IAO_0000115>
+        <rdfs:seeAlso>serial interval</rdfs:seeAlso>
+        <rdfs:seeAlso>incubation period</rdfs:seeAlso>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000038 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000038">
+        <rdfs:label>infection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Object"/>
+        <rdfs:seeAlso>http://purl.obolibrary.org/obo/TRANS_0000000</rdfs:seeAlso>
+        <rdfs:seeAlso>inapparent infection</rdfs:seeAlso>
+        <obo:IAO_0000118>colonization</obo:IAO_0000118>
+        <obo:IAO_0000115>(Syn: colonization) The entry and development or multiplication of an infectious agent in the body of man or animals. Infection is not synonymous with infectious disease; the result may be inapparent or manifest. The presence of living infectious agents on exterior surfaces of the body is called &quot;infestation&quot; (e.g., pediculosis, scabies). The presence of living infectious agents upon articles of apparel or soiled articles is not infection, but represents contamination of such articles.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000039 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000039">
+        <rdfs:label>exposure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <obo:IAO_0000115>Proximity and/or contact with a source of a disease agent in such a manner that
+effective transmission of the agent or harmful effects of the agent may occur.</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000040 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000040">
+        <rdfs:label>focus of infection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;TwoDimensionalRegion"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&obo;RO_0000105"/>
+                <someValuesFrom rdf:resource="&obo;TRANS_0000000"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A defined and circumscribed locality containing the epidemiological factors needed for transmission: a human community, a source of infection, a vector population, and appropriate environmental conditions.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000041 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000041">
+        <rdfs:label>isolation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <obo:IAO_0000115>Separation, for the period of communicability, of infected persons or animals from others under such conditions as to prevent or limit the transmission of the infectious agent from those infected to those who are susceptible or who may spread the agent to others.</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000042 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000042">
+        <rdfs:label>abortion rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000132"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>The estimated annual number of abortions per 1000 women of reproductive age (usually defined as ages 15-44).</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000043 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000043">
+        <rdfs:label>abortion ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000132"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>The estimated number of abortions per 100 live births in a given year.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000044 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000044">
+        <rdfs:label>absolute rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <rdfs:seeAlso>http://epidemiology_ontology.owl#EO:0000064</rdfs:seeAlso>
+        <obo:IAO_0000115>The number of specified health events (disease onset, death, etc.) divided by the time at risk in a defined population over a specified time interval.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000045 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000045">
+        <rdfs:label>force of mortality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000062"/>
+        <disjointWith rdf:resource="&epidemiology_ontology;EO:0000046"/>
+        <obo:IAO_0000115>The hazard rate of the occurrence of death at a point in time t the limit as delta t approaches zero - of the probability that
+an individual alive at time t will die by time t + delta t, divided by delta t. Distinct from cumulative death rate.</obo:IAO_0000115>
+        <obo:IAO_0000118>actuarial death rate</obo:IAO_0000118>
+        <obo:IAO_0000118>actuarial rate</obo:IAO_0000118>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000046 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000046">
+        <rdfs:label>cumulative death rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000062"/>
+        <obo:IAO_0000115>The proportion of a group that dies over a specified time interval. It is the incidence proportion of death. This may refer to all deaths or to deaths from a specific cause or causes. If follow-up is not complete on all persons, the proper estimation of this rate requires the use of methods that take account of censoring. Distinct from force of mortality.
+</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000047 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000047">
+        <rdfs:label>adult literacy rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000132"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>The percentage of persons 15 years of age and over who can read and write</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000048 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000048">
+        <rdfs:label>age-specific fertility rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000067"/>
+        <obo:IAO_0000115>The number of live births occurring during a specified period to women of a specified age group divided by the number of person-years lived during that period by women of that age group. When an age-specific fertility rate is calculated for a calendar year, the number of live births to women of the specified age is usually divided by the midyear population of women of that age.</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000049 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000049">
+        <rdfs:label>age-specific rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000132"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>A rate for a specified age group. The numerator and denominator refer to the same age group.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000050 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000050">
+        <rdfs:label>attack rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000133"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <obo:IAO_0000115>The proportion of a group that experiences the outcome under study over a given period (e.g., the period of an epidemic). This &quot;rate&quot; can be determined empirically by identifying clinical cases and/or by means of seroepidemiology. It also applies in noninfectious settings (e.g., mass poisonings). Because its time dimension is uncertain or arbitrarily decided, it should probably not be described as a rate.</obo:IAO_0000115>
+        <rdfs:seeAlso>Reed-Frost model</rdfs:seeAlso>
+        <rdfs:seeAlso>http://epidemiology_ontology.owl#EO:0000092</rdfs:seeAlso>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <rdfs:seeAlso>http://epidemiology_ontology.owl#EO:0000075</rdfs:seeAlso>
+        <rdfs:seeAlso>mass action principle</rdfs:seeAlso>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000051 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000051">
+        <rdfs:label>attributable rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000133"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <rdfs:seeAlso>absolute risk reduction</rdfs:seeAlso>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000118>attributable risk</obo:IAO_0000118>
+        <obo:IAO_0000118>causal rate difference</obo:IAO_0000118>
+        <obo:IAO_0000115>The proportion of the rate (risk) of a disease or other outcome in exposed individuals that can be attributed to the exposure. This measure is estimated by subtracting the rate (risk) of the outcome (usually, incidence or mortality) among the unexposed from the rate (risk) among the exposed individuals; this estimate assumes that causes other than the one under investigation have had equal effects on the exposed and unexposed groups. Unfortunately, this term has been used to denote a number of different concepts, including the attributable fraction in the population, the attributable fraction among the exposed, the population excess rate, and the rate difference.</obo:IAO_0000115>
+        <rdfs:seeAlso>impact numbers</rdfs:seeAlso>
+        <obo:IAO_0000118>causal risk difference</obo:IAO_0000118>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000052 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000052">
+        <rdfs:label>basic reproductive rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000067"/>
+        <obo:IAO_0000115>A measure of the number of infections produced, on average, by an infected individual in the early stages of an epidemic, when virtually all contacts are susceptible.</obo:IAO_0000115>
+        <obo:IAO_0000118>R0</obo:IAO_0000118>
+        <obo:IAO_0000118>Z0</obo:IAO_0000118>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000053 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000053">
+        <rdfs:label>birthrate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000132"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <obo:IAO_0000115>A summary rate based on the number of live births in a population over a given period, usually 1 year.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Birth_Rate</oboInOwl:hasDbXref>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000118>birth rate</obo:IAO_0000118>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/MSH/D001723</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://www.ebi.ac.uk/EFO/EFO_0004804</oboInOwl:hasDbXref>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000054 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000054">
+        <rdfs:label>case fatality rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000133"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <disjointWith rdf:resource="&epidemiology_ontology;EO:0000065"/>
+        <obo:IAO_0000115>The proportion of cases of a specified condition that are fatal within a specified time.This definition can lead to paradox when more persons die of the disease than develop it during a given period. For instance, chemical poisoning that is slowly but inexorably
+fatal may cause many persons to develop the disease over a relatively short period of time, but the deaths may not occur until some years later and may be spread over a period of years during which there are no new cases. Thus, in calculating the case fatality rate, it is necessary to acknowledge that the time dimension varies: it may be brief (e.g., covering only the period of stay in a hospital); of finite duration (e.g., 1 year); or of longer duration still. The term case fatality rate is then better replaced by a term such as survival rate or by the use of a survivorship table.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/SNOMEDCT/409653003</oboInOwl:hasDbXref>
+        <rdfs:seeAlso>survivorship study</rdfs:seeAlso>
+        <rdfs:seeAlso>http://epidemiology_ontology.owl#EO:0000050</rdfs:seeAlso>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000055 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000055">
+        <rdfs:label>cause-specific rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>A rate that specifies events, such as deaths, according to their cause.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000056 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000056">
+        <rdfs:label>child death rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000062"/>
+        <obo:IAO_0000115>The number of deaths of children age 1â€“4 years in a given year per 1000 children in this age group. This is a useful measure of the burden of preventable communicable diseases in the child population.</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000057 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000057">
+        <rdfs:label>child mortality rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000062"/>
+        <obo:IAO_0000118>under-5 mortality rate</obo:IAO_0000118>
+        <obo:IAO_0000115>Health indicator used by the United Nations Children&#39;s Fund (formerly the United Nations International Children&#39;s
+Emergency Fund, or UNICEF), the United Nationd Development Programme (UNDP), and other international agencies. It is computed as an annual rate by dividing the death count of children under age 5 by the count of live births in the same year and expressing the result per thousand. TherEFOre it is not an age-specific mortality rate, since the denominator is not the size of the child population under age 5. This rate is preferable to the child death rate, which is more difficult to determine in communities where the age of young children may not be known precisely.</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000058 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000058">
+        <rdfs:label>completed fertility rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000067"/>
+        <obo:IAO_0000115>The number of children born alive per woman in a cohort of women by the end of their childbearing years.</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <rdfs:seeAlso>http://epidemiology_ontology.owl#EO:0000059</rdfs:seeAlso>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000059 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000059">
+        <rdfs:label>total fertility rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000067"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000118>TFR</obo:IAO_0000118>
+        <obo:IAO_0000115>The average number of children that would be born per woman if all women lived to the end of their childbearing years and bore children according to a given set of age-specific fertility rates. It is computed by summing the age-specific fertility rates for all ages and multiplying by the interval into which the ages are grouped. The TFR is an important fertility measure, providing the most accurate
+answer to the question &quot;How many children does a woman have on average&quot;</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000060 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000060">
+        <rdfs:label>completion rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <obo:IAO_0000115>The proportion or percentage of persons in a survey for whom complete data are available for analysis.</obo:IAO_0000115>
+        <rdfs:seeAlso>http://epidemiology_ontology.owl#EO:0000139</rdfs:seeAlso>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000061 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000061">
+        <rdfs:label>cumulative incidence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000133"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <obo:IAO_0000118>average risk</obo:IAO_0000118>
+        <obo:IAO_0000118>incidence proportion</obo:IAO_0000118>
+        <obo:IAO_0000115>The number or proportion of a group (cohort) of people who experience the onset of a health-related event during a specified time interval; this interval is generally the same for all members of the group, but, as in lifetime incidence, it may vary from person to person without reference to age.</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000118>cumulative incidence rate</obo:IAO_0000118>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000062 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000062">
+        <rdfs:label>death rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000132"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/SNOMEDCT/409651001</oboInOwl:hasDbXref>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000118>mortality rate</obo:IAO_0000118>
+        <obo:IAO_0000115>An estimate of the portion of a population that dies during a specified period. The numerator is the number of persons dying during the period; the denominator is the number in the population, usually estimated as the midyear population. The death rate in a population is generally calculated by the following formula: (Number of deaths during a specified period/ Number of persons at risk of dying during the period) x 10^n. This rate is an estimate of the person-time death rate, i.e., the death rate per 10^n person/years. If the rate is low, it is also a good estimate of the cumulative death rate. This rate is also called the crude death rate.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Death_Rate</oboInOwl:hasDbXref>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000063 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000063">
+        <rdfs:label>discount rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <obo:IAO_0000115>A measure of costs, benefits, and outcomes in relation to time that
+allows for the fact that money (and health) have greater value in the present than at some future time. A term used mainly in economics and in clinical decision analysis.</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000064 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000064">
+        <rdfs:label>event rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <obo:IAO_0000115>The number of people experiencing an event as a proportion of the number of people in the population or relative to the person-time experience of the population.</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000065 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000065">
+        <rdfs:label>fatality rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000132"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <obo:IAO_0000115>The death rate observed in a designated series of persons affected by a
+simultaneous event (e.g., victims of a disaster). A term to be avoided, because it can be
+confused with case fatality rate.</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000066 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000066">
+        <rdfs:label>fetal death rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000062"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>The number of fetal deaths in a year expressed
+as a proportion of the total number of births (live births plus fetal deaths) in the same
+year.
+
+Fetal death rate = (number of fetal deaths in a year/ number of fetal deaths plus live births in the same year) Ã— 1000
+
+Note that the denominator is larger than for the fetal death ratio and that the fetal death
+rate is therEFOre lower than the fetal death ratio, which is used in some jurisdictions.
+International comparisons of stillbirth or fetal death statistics will be fl awed if the
+distinction is not appreciated.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000067 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000067">
+        <rdfs:label>general fertility rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000132"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <obo:IAO_0000115>A more refined measure of fertility than the crude
+birthrate. The denominator is restricted to the number of women of childbearing age (i.e., 15-44 or 15-49. Defined as General fertility rate =(number of live births in an area during a year / midyear female population age 15-44 in same area in same year)x 1000.
+The upper age limit for this rate is 44 (sometimes 49) years in most jurisdictions.</obo:IAO_0000115>
+        <obo:IAO_0000118>fertility rate</obo:IAO_0000118>
+        <obo:IAO_0000119>true</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000068 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000068">
+        <rdfs:label>gross reproduction rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000067"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000118>raw coefficient of reproduction</obo:IAO_0000118>
+        <rdfs:seeAlso>http://epidemiology_ontology.owl#EO:0000068</rdfs:seeAlso>
+        <obo:IAO_0000115>The average number of female children a woman would have if she survived to the end of her childbearing years and if, throughout that period, she were subject to a given set of age-specific fertility rates and a given sex ratio at birth. It provides a measure of replacement-level fertility (or of the replacement of the generations) in the absence of mortality. In a hypothetical generation, it is equal to the number of girls born to a woman until the end of the reproduction period at a given (current year) age-specific fertility.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000069 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000069">
+        <rdfs:label>growth rate of population</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000132"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>A measure of population growth (in the absence
+of migration) comprising addition of newborns to the population and subtraction of
+deaths. The result, known as natural rate of increase, is calculated as
+((Live births during the yearâ€”deaths during the year)/Midyear population)Ã— 1000
+Alternatively, it is the difference between crude birthrate and crude death rate.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000070 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000070">
+        <rdfs:label>hebdomadal mortality rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000062"/>
+        <obo:IAO_0000115>The mortality rate in the fi rst week of life; the
+denominator is the number of live births in a year.</obo:IAO_0000115>
+        <obo:IAO_0000119>true</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000071 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000071">
+        <rdfs:label>inception rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000133"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>The rate at which new spells of illness occur in a population. A term
+applied principally to short-term spells of illness, such as acute respiratory infections,
+and preferred by some epidemiologists because an annual incidence rate for such conditions
+may exceed the numbers in the population at risk.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000073 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000073">
+        <rdfs:label>incidence rate ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000133"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <obo:IAO_0000115>The incidence rate in the exposed group divided by the incidence
+rate in the unexposed group. Often referred to as the rate ratio.</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000074 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000074">
+        <rdfs:label>infant mortality rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000062"/>
+        <obo:IAO_0000115>A measure of the yearly rate of deaths in children less than 1 year old. The denominator is the number of live births in the same year.
+Defined as
+Infant Mortality rate=(number of deaths in a year of children less than 1 year of age/number of live births in the same year)x 1000
+This is often cited as a useful indicator of the level of health in a community. The denominator is an approximation of the population at risk.</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000118>IMR</obo:IAO_0000118>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000075 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000075">
+        <rdfs:label>infection rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000133"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <obo:IAO_0000115>The incidence rate of manifest plus inapparent infections (the latter
+determined by seroepidemiology).</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000076 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000076">
+        <rdfs:label>force of morbidity</rdfs:label>
+        <equivalentClass rdf:resource="&epidemiology_ontology;EO:0000077"/>
+        <rdfs:subClassOf rdf:resource="&obo;IDO_0000484"/>
+        <obo:IAO_0000118>instantaneous incidence rate</obo:IAO_0000118>
+        <obo:IAO_0000115>A theoretical measure of the number of new cases that occur per unit of population-time (e.g., person-years at risk). This is a measure of the occurrence of disease at a point in time, t, defined mathematically as the limit, as delta t approaches zero, of
+(Probability that a person well at time t will develop the disease in the interval t + delta t)/delta t
+The average value of this quantity over the interval t to (t + delta t) can be estimated as (Incident cases observed from t to (t + delta t))/(Number of person-time units of experience observed from t to (t + delta t)</obo:IAO_0000115>
+        <obo:IAO_0000118>hazard rate</obo:IAO_0000118>
+        <obo:IAO_0000118>person-time incidence rate</obo:IAO_0000118>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000077 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000077">
+        <rdfs:label>instantaneous incidence rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IDO_0000484"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000078 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000078">
+        <rdfs:label>maternal mortality rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000062"/>
+        <obo:IAO_0000115>The risk of dying from causes associated with childbirth. The numerator is the deaths arising during pregnancy or from puerperal causes (i.e., deaths occurring during and/or due to deliveries, complications of pregnancy, childbirth, and the puerperium). Women exposed to the risk of dying from puerperal causes are those who have been pregnant during the period. Their number being unknown, the number of live births is used as the conventional denominator for computing comparable maternal mortality rates. The formula is: Annual maternal mortality rate=(number of deaths from puerperal causes in a given geographic area during a given year/ number of live births that occurred among the population ofthe given geographic area during the same year) x 1000 (or 100,000) There is variation in the duration of the postpartum period in which death may occur and be certified as due to puerperal causes, i.e., maternal mortality. Although the WHO defines maternal mortality as death during pregnancy or within 42 days of delivery, in some areas a period as long as a year is used. Maternal deaths may be subdivided into two groups: direct obstetric deaths and indirect obstetric deaths.</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000079 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000079">
+        <rdfs:label>morbidity rate</rdfs:label>
+        <equivalentClass rdf:resource="&obo;IDO_0000484"/>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000133"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <oboInOwl:hasDbXref>http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000132</oboInOwl:hasDbXref>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>A term, preferably avoided, used to refer to the incidence rate and sometimes (incorrectly) to the prevalence of disease.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000080 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000080">
+        <rdfs:label>neonatal mortality rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000062"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <rdfs:seeAlso>http://epidemiology_ontology.owl#EO:0000062</rdfs:seeAlso>
+        <obo:IAO_0000115>1. In vital statistics, the number of deaths in infants under 28 days of age in a given period, usually a year, per 1000 live births in that period. 2. In obstetrical and perinatal research, the term neonatal mortality rate is often used to denote the cumulative mortality rate of live-born infants within 28 days of age.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000081 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000081">
+        <rdfs:label>net migration rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000132"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>The net effect of immigration and emigration on an area&#39;s population, expressed as an increase or decrease per 1000 population of the area in a given year.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000082 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000082">
+        <rdfs:label>net reproduction rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000067"/>
+        <rdfs:seeAlso>http://epidemiology_ontology.owl#EO:0000138</rdfs:seeAlso>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>The average number of female children born per woman in a cohort subject to a given set of age-specific fertility rates, a given set of age specific mortality rates, and a given sex ratio at birth. This rate measures replacement fertility under given conditions of fertility and mortality: it is the ratio of daughters to mothers assuming continuation of the specified conditions of fertility and mortality. It is a measure of population growth from one generation to another under constant conditions. This rate is similar to the gross reproduction rate but takes into account that some women will die before completing their childbearing years. An NRR of 1.00 means that each generation of mothers is having exactly enough daughters to replace itself in the population.</obo:IAO_0000115>
+        <rdfs:seeAlso>http://epidemiology_ontology.owl#EO:0000068</rdfs:seeAlso>
+        <obo:IAO_0000118>NRR</obo:IAO_0000118>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000083 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000083">
+        <rdfs:label>net reproductive rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000067"/>
+        <obo:IAO_0000118>case reproduction rate</obo:IAO_0000118>
+        <obo:IAO_0000115>In infectious disease epidemiology,
+the average number of secondary cases that will occur in a mixed host population
+of susceptibles and nonsusceptibles when one infected individual is introduced.
+Its relationship to the basic reproductive rate (R0) is given by
+R = R0x
+where x is the proportion of the host population that is susceptible.</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000084 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000084">
+        <rdfs:label>perinatal mortality rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000062"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>1. In most industrially developed nations, this is defi ned as
+Perinatal mortality rate=(fetal deaths (28 weeks + of gestation) + postnatal deaths (first week))/(fetal deaths (28 weeks +of gestation) + live births)Ã— 1000
+2. The WHO&#39;s defi nition, more appropriate in nations with less well established vital records, is
+Perinatal mortality rate=late fetal deaths
+(28 weeks + of gestation) +
+postnatal deaths (first week)
+live births in a year
+Ã— 1000
+Note the difference in denominator of the perinatal mortality rate as defi ned by the WHO
+and in industrially developed nations. This makes international comparison diffi cult.
+The WHO Expert Committee on the Prevention of Perinatal Mortality and Morbidity
+(1970) recommended a more precise formulation: Late fetal and early neonatal deaths
+weighing over 1000 g at birth expressed as a ratio per 1000 live births weighing over
+1000 g at birth.â€</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000085 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000085">
+        <rdfs:label>person-time incidence rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000133"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <obo:IAO_0000115>A measure of the
+incidence rate of an event (e.g., a disease or death) in a population at risk, given by
+Number of events occurring during the interval/
+Number of person-time units at risk observed
+during the interval</obo:IAO_0000115>
+        <obo:IAO_0000118>interval incidence density</obo:IAO_0000118>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000086 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000086">
+        <rdfs:label>population excess rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000132"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <obo:IAO_0000115>A measure of the number of disease cases associated
+with exposure to a putative cause of the disease in the population. It is the difference
+between the rates of disease in the entire population and among the nonexposed.</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000087 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000087">
+        <rdfs:label>postneonatal mortality rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000062"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>The number of infant deaths between 28 days and
+1 year of age in a given year per 1000 live births in that year. It is an important rate to
+monitor in developing countries, where older infants frequently die of infections and
+malnutrition.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000089 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000089">
+        <rdfs:label>rate difference</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <rdfs:seeAlso>http://epidemiology_ontology.owl#EO:0000086</rdfs:seeAlso>
+        <obo:IAO_0000115>The absolute difference between two rates; for example, the difference in incidence rate between a population group exposed to a causal factor and a population group not exposed to the factor:
+RD= Ie - Iu
+where Ie = incidence rate among exposed and Iu = incidence rate among unexposed. In comparisons of exposed and unexposed groups, the term excess rate may be used as a synonym for rate difference.</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000090 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000090">
+        <rdfs:label>rate ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <obo:IAO_0000115>The ratio of two rates; e.g., the rate in an exposed population divided by the rate in an unexposed population:
+Rate ratio= Ie/Iu
+where Ie is the incidence rate among the exposed and Iu is the incidence rate among the unexposed.</obo:IAO_0000115>
+        <rdfs:seeAlso>http://epidemiology_ontology.owl#EO:0000097</rdfs:seeAlso>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000092 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000092">
+        <rdfs:label>secondary attack rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000133"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <rdfs:seeAlso>http://epidemiology_ontology.owl#EO:0000051</rdfs:seeAlso>
+        <rdfs:seeAlso>http://epidemiology_ontology.owl#EO:0000050</rdfs:seeAlso>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en"> The number of cases of an infection that occur among contacts within the incubation period following exposure to a primary case in relation to the total number of exposed contacts; the denominator is restricted to susceptible contacts when these can be determined. The secondary attack rate is a measure of contagiousness and is useful in evaluating control measures. </obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000093 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000093">
+        <rdfs:label>spleen rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en"> A term used in malaria epidemiology to define the frequency of enlarged spleens detected on survey of a population in which malaria is prevalent. In association with the Hackett spleen classification, it summarizes the severity of malaria endemicity. </obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000094 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000094">
+        <rdfs:label>standardization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en"> A set of techniques, based on weighted averaging, used to remove as much as possible the effects of differences in age or other confounding variables in comparing two or more populations. The common method uses weighted averaging of rates specific for age, sex, or some other potential confounding variable(s) according to some specified distribution of these variables.  </obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000095 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000095">
+        <rdfs:label>direct standardization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000094"/>
+        <obo:IAO_0000115 xml:lang="en"> The specific rates in a study population are averaged, using as weights the distribution of a specifi ed standard population. The directly standardized rate represents what the crude rate would have been in the study population if that population had the same distribution as the standard population with respect to the variable(s) for which the adjustment or standardization was carried out. Inverse probability weighting can be seen as a generalization. </obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000096 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000096">
+        <rdfs:label>indirect standardization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000094"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en"> This is used to compare study populations for which the specifi c rates are either statistically unstable or unknown. The specifi c rates in the standard population are averaged, using as weights the distribution of the study population. The ratio of the crude rate for the study population to the weighted average so obtained is the standardized mortality (or morbidity) ratio, or SMR. The indirectly standardized rate itself is the product of the SMR and the crude rate for the standard population, but this product is rarely used in etiological studies. A problem that arises with indirect standardization is that different SMRs are based on different weighting schemes (one for each study population) and so are not fully standardized for comparison to one another. As a result, comparisons of SMRs (or indirectly standardized rates) may remain partially confounded by the adjustment variables</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000097 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000097">
+        <rdfs:label>relative risk</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <rdfs:seeAlso>http://epidemiology_ontology.owl#EO:0000108</rdfs:seeAlso>
+        <obo:IAO_0000115 xml:lang="en"> 1. The ratio of the risk of an event among the exposed to the risk among the unexposed; this usage is synonymous with risk ratio.
+2. The ratio of the incidence rate in the exposed to the incidence rate in the unexposed (i.e., the rate ratio). It is not synonymous with odds ratio (OR). In some biostatistical articles, it has been used for the ratio of forces of morbidity. The use of relative risk for OR arises from the fact that for “rare” (infrequent) diseases, the two quantities may approximate one another. For common occurrences (e.g., neonatal mortality in infants under 1500-g birth weight), the approximations do not hold.
+3. Let ARC be the absolute risk of events in the control group and ART the absolute risk of events in the treatment group; then RR = ARC / ART = 1 – RR reduction (RRR). Example: an RR of 0.7 equals an RRR of 0.3, i.e., a 30% reduction in the RR of the outcome in the treatment group compared with the control group. See also absolute risk (AR); absolute risk reduction (ARR); control group; risk difference.</obo:IAO_0000115>
+        <obo:IAO_0000118>RR</obo:IAO_0000118>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000098 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000098">
+        <rdfs:label>survival rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000133"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">  The proportion of survivors in a group (e.g., of patients studied and followed over a specified period). The proportion of persons in a specified group alive at the beginning of the time interval (e.g., a 5-year period) who survive to the end of the interval. It is equal to 1 minus the cumulative death rate. May be studied by current or cohort life table methods. </obo:IAO_0000115>
+        <obo:IAO_0000118> survival proportion</obo:IAO_0000118>
+        <obo:IAO_0000118> cumulative survival rate</obo:IAO_0000118>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000100 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000100">
+        <rdfs:label>true-positive rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en"> See sensitivity and specificity. </obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000101 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000101">
+        <rdfs:label>true-negative rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en"> See sensitivity and specificity. </obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000102 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000102">
+        <rdfs:label>ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Quality"/>
+        <obo:IAO_0000115>The value obtained by dividing one quantity by another. rate, proportion, and percentage are types of ratios. The numerator of a proportion is included in the population defined by the denominator, whereas in other types of ratios numerator and denominator are distinct quantities, neither being included in the other. The dimensionality of a ratio is obtained through algebraic cancellation, summation, etc., of the dimensionalities of its numerator and denominator terms. Both counted and measured values may be included in the numerator and in the denominator. There are no general restrictions on the dimensionalities or ranges of ratios, but there are in some types of ratios (e.g., proportion, prevalence). Ratios are sometimes expressed as percentages (e.g., standardized mortality ratio). In these cases, the value may exceed 100. </obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/PATO_0001470</oboInOwl:hasDbXref>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000103 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000103">
+        <rdfs:label>age dependency ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000108"/>
+        <obo:IAO_0000115 xml:lang="en"> See dependency ratio. </obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <rdfs:seeAlso>http://epidemiology_ontology.owl#EO:0000108</rdfs:seeAlso>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000104 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000104">
+        <rdfs:label>benefit-cost ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <obo:IAO_0000115 xml:lang="en"> See cost-benefit analysis. </obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000105 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000105">
+        <rdfs:label>cancer mortality:incidence ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000118"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000118> cancer MIR</obo:IAO_0000118>
+        <obo:IAO_0000118> cancer mortality-to-inci­dence ratio</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">  The ratio of mortality to incidence for each of several cancer sites being considered in a study. It is one diagnostic technique among several that can be used to gain some sense of cancer data quality; its main use is in studies of the natural history and survival rates of malignancies. Because not all patients with cancer die of cancer, the number of new cases in any one year should exceed cancer deaths in that same year, and—if cancer mortality and incidence are reported accurately—the ratio between the two should be proportional to the known survival for each specific site. For example, cancers with poor survival, such as pancreatic cancer, would be expected to have an </obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000106 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000106">
+        <rdfs:label>cross-product ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <obo:IAO_0000115 xml:lang="en"> See odds ratio. </obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <rdfs:seeAlso>http://epidemiology_ontology.owl#EO:0000119</rdfs:seeAlso>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000107 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000107">
+        <rdfs:label>cumulative incidence ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000133"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en"> The ratio of the cumulative incidence rate in the exposed to the cumulative incidence rate in the unexposed. </obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000108 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000108">
+        <rdfs:label>dependency ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000132"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en"> Ratio of children and old people in a population in comparison to all others (i.e., the proportion of economically inactive to economically active);“chil­dren” are usually defined those below 15 years of age and “old people” as those 65 years of age and above. </obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000109 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000109">
+        <rdfs:label>disease odds ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000119"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <rdfs:seeAlso>http://epidemiology_ontology.owl#EO:0000119</rdfs:seeAlso>
+        <obo:IAO_0000115 xml:lang="en"> See odds ratio.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000110 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000110">
+        <rdfs:label>exposure-odds ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000119"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">The exposure-odds ratio for a set of case-control or cross-sectional data is the ratio of the odds in favor of exposure among the cases (a/b) to the odds in favor of exposure among noncases (c/d). </obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000111 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000111">
+        <rdfs:label>exposure ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000133"/>
+        <obo:IAO_0000115 xml:lang="en"> The ratio of rates at which persons in the case and control groups of a case-control study are exposed to the risk factor (or to the protective factor) of interest. </obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000112 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000112">
+        <rdfs:label>fertility ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000132"/>
+        <obo:IAO_0000115 xml:lang="en"> A measure of the fertility of the population that restricts the denomi­nator to the female population of appropriate age for childbearing. The fertility ratio is defined as Fertility ratio = (number of girls under 15 years of age/number of women in the 15–49 age group) × 1000.  It should not be confused with general fertility rate. </obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000113 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000113">
+        <rdfs:label>fetal death ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000132"/>
+        <obo:IAO_0000115 xml:lang="en"> A measure of fetal wastage, related to the number of live births. Defined as Fetal death ratio = number of fetal deaths in a year/ number of live births in the same year (Can be expressed as a rate per 1000.) </obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000114 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000114">
+        <rdfs:label>incidence-density ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <rdfs:seeAlso>http://epidemiology_ontology.owl#EO:0000090</rdfs:seeAlso>
+        <obo:IAO_0000115 xml:lang="en"> The ratio of two incidence densities. </obo:IAO_0000115>
+        <obo:IAO_0000118>idr</obo:IAO_0000118>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000115 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000115">
+        <rdfs:label>incidence rate ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000133"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en"> The incidence rate in the exposed group divided by the inci­dence rate in the unexposed group. Often referred to as the rate ratio. </obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000116 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000116">
+        <rdfs:label>likelihood ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en"> Likelihood ratios are used to appraise screening and diagnostic tests. See also sensitivity and pecificity. </obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000117 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000117">
+        <rdfs:label>mantel-haenszel estimate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000133"/>
+        <obo:IAO_0000118>mantel-haenszel odds ratio</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en"> Mantel and Haenszel provided an adjusted (“summary”) odds ratio estimate that may be derived from grouped and matched sets of data.272 It is now known as the Mantel-Haenszel estimate, one of the few eponymous terms of modern epidemiology. The statistic may be regarded as a type of weighted average of the individual odds ratios, derived from dividing a sample into a series of strata. Ideally, the strata would be internally homogeneous with respect to confounding factors. The Mantel-Haenszel method can also be extended to the summarization of rate ratios and rate differences from follow-up studies. </obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000118 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000118">
+        <rdfs:label>mortality:incidence ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000133"/>
+        <obo:IAO_0000115 xml:lang="en"> See cancer mortality:incidence ratio. </obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000119 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000119">
+        <rdfs:label>odds ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <obo:IAO_0000115 xml:lang="en">  The ratio of two odds. The term odds is defined differently according to the situation under discussion. Consider the following notation for the distribution of a binary exposure and a disease in a population or a sample:  Exposed  Unexposed  Disease  a  b  No disease  c  d  The odds ratio (cross-product ratio) is ad/bc. The exposure-odds ratio for a set of case-control or cross-sectional data is the ratio of the odds in favor of exposure among the cases (a/b) to the odds in favor of exposure among noncases (c/d).This reduces to ad/bc. In a case-control study with incident cases, unbiased subject selection, and a “rare” (uncommon) disease, ad/bc is an approximate estimate of the risk ratio; the accuracy of this approximation is proportional to the cumulative incidence of the disease. With incident cases, unbiased subject selection, and density sampling of controls, ad/bc is an estimate of the ratio of the person-time incidence rates (force of morbidity) in the exposed and unexposed (no rarity assumption is required for this). The disease-odds ratio for a cohort or cross-sectional study is the ratio of the odds in favor of disease among the exposed (a/c) to the odds in favor of disease among the unexposed (b/d).This reduces to ad/bc and hence is equal to the exposure-odds ratio for the cohort or cross section. The prevalence-odds ratio refers to an odds ratio derived cross-sectionally, as, for example, an odds ratio derived from studies of prevalent (rather than incident) cases. The risk-odds ratio is the ratio of the odds in favor of getting disease if exposed to the odds in favor of getting disease if not exposed. The odds ratio derived from a cohort study is an estimate of this ratio. See also case-control study and rare-disease assumption. </obo:IAO_0000115>
+        <obo:IAO_0000118> relative odds</obo:IAO_0000118>
+        <obo:IAO_0000118> cross-product ratio</obo:IAO_0000118>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000120 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000120">
+        <rdfs:label>proportional mortality-odds ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000119"/>
+        <obo:IAO_0000115 xml:lang="en"> The odds of deaths from a specified condition in a de.ned population divided by the odds of deaths expected from this Proportional mortality ratio 198 condition in a standard population, usually expressed either on an age-sex-specific basis or sex-specific after age adjustment. Often preferred to the proportional mortality ratio on the grounds that it tends to better approximate the ratio of mortality rates in the two populations. </obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000121 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000121">
+        <rdfs:label>proportional mortality ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <obo:IAO_0000115 xml:lang="en"> The proportion of observed deaths from a specified condition in a de.ned population divided by the proportion of deaths expected from this condition in a standard population, usually expressed either on an age-sex­-specific basis or sex-specific after age adjustment. Unlike the standardized mortality ratio, it does not require data on the age composition of the population but only on the deaths.The acronym PMR is preferably avoided because the same initial letters can stand for perinatal mortality rate. </obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000122 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000122">
+        <rdfs:label>rate-odds ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <rdfs:seeAlso>http://epidemiology_ontology.owl#EO:0000119</rdfs:seeAlso>
+        <obo:IAO_0000115 xml:lang="en"> See odds ratio. </obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000123 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000123">
+        <rdfs:label>rate ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <rdfs:seeAlso>http://epidemiology_ontology.owl#EO:0000097</rdfs:seeAlso>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en"> The ratio of two rates; e.g., the rate in an exposed population divided by the rate in an unexposed population: IeRate ratio =Iu where I e is the incidence rate among the exposed and I u is the incidence rate among the unexposed. </obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000124 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000124">
+        <rdfs:label>risk-benefit ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <obo:IAO_0000115 xml:lang="en"> The results of a risk-benefit analysis expressed as the ratio of risks to benefits. </obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000125 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000125">
+        <rdfs:label>sex ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000132"/>
+        <obo:IAO_0000115 xml:lang="en"> The ratio of one sex to the other. Usually de.ned as the ratio of males to females (or of the rates observed in males and females). </obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000126 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000126">
+        <rdfs:label>signal-to-noise ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en"> In statistics and signal processing, the ratio of explained variation to unexplained (error) variation. A jargon term for the relationship of pertinent . ndings to that which is extraneous or irrelevant or intrudes because measurement methods or other procedures are insuf. ciently sensitive. </obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000127 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000127">
+        <rdfs:label>standardized incidence ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000133"/>
+        <obo:IAO_0000118> standardized morbidity ratio</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">  The ratio of the incident number of cases of a specified condition in the study population to the incident number that would be expected if the study population had the same incidence rate as a standard or other population for which the incidence rate is known; this ratio is usually expressed as a percentage. </obo:IAO_0000115>
+        <rdfs:seeAlso>http://epidemiology_ontology.owl#EO:0000095</rdfs:seeAlso>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000128 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000128">
+        <rdfs:label>standardized mortality ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000132"/>
+        <obo:IAO_0000118>smr</obo:IAO_0000118>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en"> The ratio of the number of deaths observed in the study group or population to the number that would be expected if the study population had the same specific rates as the standard population. Often multi­plied by 100. </obo:IAO_0000115>
+        <rdfs:seeAlso>http://epidemiology_ontology.owl#EO:0000095</rdfs:seeAlso>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000129 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000129">
+        <rdfs:label>standardized rate ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000123"/>
+        <rdfs:seeAlso>http://epidemiology_ontology.owl#EO:0000094</rdfs:seeAlso>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en"> A rate ratio in which the numerator and denomi­nator rates have been standardized (weighted) to the same (standard) population dis­tribution. </obo:IAO_0000115>
+        <obo:IAO_0000118>srr</obo:IAO_0000118>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000130 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000130">
+        <rdfs:label>survival ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000132"/>
+        <obo:IAO_0000115 xml:lang="en"> The probability of surviving between one age and another; when computed for age groups, the ratios correspond to those of the person-years-lived function of a life table. </obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000132 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000132">
+        <rdfs:label>demographic parameter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000001"/>
+        <obo:IAO_0000115>A quantity (such as the mean or variance) that characterizes the demography of a population and that can be estimated by calculations from sample data</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000133 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000133">
+        <rdfs:label>epidemiological parameter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000001"/>
+        <obo:IAO_0000115>A quantity (such as the mean or variance) that characterizes epidemiological entities or events and that can be estimated by calculations from sample data</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000134 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000134">
+        <rdfs:label>strict isolation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000041"/>
+        <obo:IAO_0000115>To prevent transmission of highly contagious or virulent infections
+that may be spread by both air and contact. The specifications include a private room and the use of masks, gowns, and gloves for all persons entering the room. Special ventilation requirements with the room at negative pressure to surrounding areas are desirable.</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000135 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000135">
+        <rdfs:label>contact isolation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000041"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>For less highly transmissible or serious infections and diseases or conditions that are spread primarily by close or direct contact. A private room is indicated but patients infected with the same pathogen may share a room. Masks are indicated for those who come close to the patient, gowns are indicated if soiling is likely, and gloves are indicated for touching infectious material.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000136 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000136">
+        <rdfs:label>respiratory isolation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000041"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>To prevent transmission of infectious diseases over short distances through the air, a private room is indicated, but patients infected with the same organism may share a room. In addition to the basic requirements, masks are indicated for those who come in close contact with the patient; gowns and gloves are not indicated.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000137 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000137">
+        <rdfs:label>tuberculosis isolation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000041"/>
+        <obo:IAO_0000118>AFB isolation</obo:IAO_0000118>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>For patients with pulmonary tuberculosis who have a positive sputum smear or chest x-rays that strongly suggest active tuberculosis. Specifications include use of a private room with special ventilation and closed door. Masks are used only if the patient is coughing and does not reliably and consistently cover the mouth. Gowns are used to prevent gross contamination of clothing. Gloves are not indicated.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000138 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000138">
+        <rdfs:label>replacement-level fertility</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000132"/>
+        <rdfs:seeAlso>http://epidemiology_ontology.owl#EO:0000068</rdfs:seeAlso>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>The level of fertility at which a cohort of women are having only enough daughters to replace themselves in the population. By definition, it is equal to a net reproduction rate of 1.00. The total fertility rate is also used as a measure of replacement level fertility. In the United States today, a total fertility rate of 2.12 is considered to be replacement level; it is higher than 2 because of mortality and because of a sex ratio greater than 1 at birth. The higher the female mortality rate, the higher is the replacement-level fertility.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000139 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000139">
+        <rdfs:label>response rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <obo:IAO_0000115>The number of completed or returned survey instruments (questionnaires, interviews, etc.) divided by the total number of persons who would have been surveyed if all had participated. Usually expressed as a percentage. Nonresponse can have several causes, e.g., death, removal from the survey community, and refusal. See also bias; nonparticipants. </obo:IAO_0000115>
+        <rdfs:seeAlso>http://epidemiology_ontology.owl#EO:0000060</rdfs:seeAlso>
+        <rdfs:seeAlso>http://epidemiology_ontology.owl#EO:0000068</rdfs:seeAlso>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000140 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000140">
+        <rdfs:label>contact</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Object"/>
+        <obo:IAO_0000115>A person or animal that has been in such association with an infected person or animal or a contaminated environment as to have had opportunity to acquire the infection.</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000484 -->
+
+    <Class rdf:about="&obo;IDO_0000484">
+        <rdfs:label>incidence rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000133"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <oboInOwl:hasDbXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Incidence_Rate</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>The rate at which new events occur in a population. The numerator is the number of new events that occur in a defined period or other physical span. The denominator is the population at risk of experiencing the event during this period, sometimes expressed as person-time; it may instead be in other units, such as passenger-miles. The incidence rate most often used in public health practice is calculated from the formula
+(Number of new events in specified period/Average number of persons exposed to risk during this period)x10^n 
+Strictly speaking, this ratio is neither a rate nor a proportion but is instead the rat emultiplied by the length of the specified period. If the period is a year, the ratio isnonetheless often called the annual incidence rate. The average size of the population isoften the estimated population size at the midperiod. The ratio divided by the length ofthe period is an estimate of the person-time incidence rate (i.e., the rate per 10^n person-years).If the ratio is small, as with many chronic diseases, it is also a good estimate of the cumulative incidence over the period (e.g., a year). If the number of new cases during a specified period is divided by the sum of the person-time units at risk for all persons during the period, the result is the person-time incidence rate.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000126</oboInOwl:hasDbXref>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000531 -->
+
+    <Class rdf:about="&obo;IDO_0000531">
+        <rdfs:label xml:lang="en">host</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Object"/>
+        <obo:IAO_0000115>1. A person or other living animal, including birds and arthropods, that affords subsistence or lodgment to an infectious agent under natural conditions. Some protozoa and helminths pass successive stages in alternate hosts of different species. Hosts in which the parasite attains maturity or passes its sexual stage are primary or definitive hosts; those in which the parasite is in a larval or asexual state are secondary or intermediate hosts. A transport host is a carrier in which the organism remains alive but does not undergo development.
+2. In an epidemiological context, the host may also be the population or group; biological, social, and behavioral characteristics of this group relevant to health are called “host factors.”</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="&obo;ido.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000532 -->
+
+    <Class rdf:about="&obo;IDO_0000532">
+        <rdfs:label xml:lang="en">definitive host</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IDO_0000531"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>In parasitology, the host in which sexual maturation occurs. In malaria, the mosquito (invertebrate host).</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">primary host</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;ido.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000533 -->
+
+    <Class rdf:about="&obo;IDO_0000533">
+        <rdfs:label xml:lang="en">intermediate host</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IDO_0000531"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>In parasitology, the host in which asexual forms of the parasite develop. In malaria, this is a human or other vertebrate mammal or bird (vertebrate host).</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">secondary host</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;ido.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000534 -->
+
+    <Class rdf:about="&obo;IDO_0000534">
+        <rdfs:label xml:lang="en">paratenic host</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IDO_0000531"/>
+        <obo:IAO_0000117>Alexander Diehl</obo:IAO_0000117>
+        <obo:IAO_0000117>Lindsay Cowell</obo:IAO_0000117>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">An organism bearing a paratenic host role.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="&obo;ido.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000535 -->
+
+    <Class rdf:about="&obo;IDO_0000535">
+        <rdfs:label xml:lang="en">dead-end host</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IDO_0000531"/>
+        <obo:IAO_0000117>Lindsay Cowell</obo:IAO_0000117>
+        <obo:IAO_0000117>Alexander Diehl</obo:IAO_0000117>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">An organism bearing a dead-end host role.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">incidental host</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;ido.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000536 -->
+
+    <Class rdf:about="&obo;IDO_0000536">
+        <rdfs:label xml:lang="en">parasite host</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IDO_0000531"/>
+        <obo:IAO_0000117>Lindsay Cowell</obo:IAO_0000117>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000117>Alexander Diehl</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">An organism bearing a parasite host role.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="&obo;ido.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000537 -->
+
+    <Class rdf:about="&obo;IDO_0000537">
+        <rdfs:label xml:lang="en">infectious agent host</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IDO_0000538"/>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000117>Alexander Diehl</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">An organism bearing an infectious agent host role.</obo:IAO_0000115>
+        <obo:IAO_0000117>Lindsay Cowell</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="&obo;ido.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000538 -->
+
+    <Class rdf:about="&obo;IDO_0000538">
+        <rdfs:label xml:lang="en">pathogen host</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IDO_0000531"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>An organism capable of causing disease (literally, causing a pathological process).</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="&obo;ido.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000539 -->
+
+    <Class rdf:about="&obo;IDO_0000539">
+        <rdfs:label xml:lang="en">infectious agent carrier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IDO_0000537"/>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000117>Alexander Diehl</obo:IAO_0000117>
+        <obo:IAO_0000117>Lindsay Cowell</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">
+An organism bearing the infectious agent carrier role.
+</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="&obo;ido.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000540 -->
+
+    <Class rdf:about="&obo;IDO_0000540">
+        <rdfs:label xml:lang="en">infectious agent vector</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Object"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&obo;RO_0000056"/>
+                <someValuesFrom rdf:resource="&obo;TRANS_0000005"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>In infectious disease epidemiology, an insect or any living carrier that transports an infectious agent from an infected individual or its wastes to a susceptible individual or its food or immediate surroundings. The organism may or may not pass through a developmental cycle within the vector.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="&obo;ido.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000541 -->
+
+    <Class rdf:about="&obo;IDO_0000541">
+        <rdfs:label xml:lang="en">mechanical vector of infectious agent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IDO_0000540"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&obo;RO_0000056"/>
+                <someValuesFrom rdf:resource="&obo;TRANS_0000003"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000412 rdf:resource="&obo;ido.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000542 -->
+
+    <Class rdf:about="&obo;IDO_0000542">
+        <rdfs:label xml:lang="en">biological vector of infectious agent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IDO_0000540"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&obo;RO_0000056"/>
+                <someValuesFrom rdf:resource="&epidemiology_ontology;EO:0000008"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000412 rdf:resource="&obo;ido.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000543 -->
+
+    <Class rdf:about="&obo;IDO_0000543">
+        <rdfs:label xml:lang="en">vehicle of infectious agent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Object"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&obo;RO_0000056"/>
+                <someValuesFrom rdf:resource="&obo;TRANS_0000010"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The mode of transmission of an infectious agent from its reservoir to a susceptible host. This can be person-to-person, via food, vector-borne, etc.</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="&obo;ido.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000544 -->
+
+    <Class rdf:about="&obo;IDO_0000544">
+        <rdfs:label xml:lang="en">fomite</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IDO_0000543"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&obo;RO_0000056"/>
+                <someValuesFrom rdf:resource="&obo;TRANS_0000011"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000118>fomes</obo:IAO_0000118>
+        <obo:IAO_0000115>Articles that convey infection to others because they have been contaminated by pathogenic organisms. Examples include a handkerchief, drinking glass, door handle, clothing, and toys.</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="&obo;ido.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000569 -->
+
+    <Class rdf:about="&obo;IDO_0000569">
+        <rdfs:label xml:lang="en">asymptomatic host of infectious agent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IDO_0000537"/>
+        <obo:IAO_0000115 xml:lang="en">
+An organism that is host to an infectious agent has no symptoms of the infectious disease associated with the infectious agent.
+</obo:IAO_0000115>
+        <obo:IAO_0000117>Lindsay Cowell</obo:IAO_0000117>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000117>Alexander Diehl</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="&obo;ido.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000572 -->
+
+    <Class rdf:about="&obo;IDO_0000572">
+        <rdfs:label xml:lang="en">chronic carrier of infectious agent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IDO_0000539"/>
+        <obo:IAO_0000115 xml:lang="en">
+An organism who has been bearer of the infectious agent carrier role for an extended period of time.
+</obo:IAO_0000115>
+        <obo:IAO_0000117>Alexander Diehl</obo:IAO_0000117>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000117>Lindsay Cowell</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="&obo;ido.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000573 -->
+
+    <Class rdf:about="&obo;IDO_0000573">
+        <rdfs:label xml:lang="en">symptomatic host of infectious agent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IDO_0000537"/>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000117>Alexander Diehl</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">
+An organism who is host to an infectious agent and has symptoms of the infectious disease associated with the infectious agent
+</obo:IAO_0000115>
+        <obo:IAO_0000117>Lindsay Cowell</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="&obo;ido.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000161 -->
+
+    <Class rdf:about="&obo;PATO_0000161">
+        <rdfs:label>rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Rate</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>A measure of the frequency of occurrence of a phenomenon. In epidemiology, demography, and vital statistics, a rate is an expression of the frequency with which an event occurs in a defi ned population, usually in a specified period of time. Physical units other than time may be used for constructing rates, however; for example, in accident epidemiology, deaths per passenger-mile is a more meaningful way of comparing modes of transportation. The use of rates rather than raw numbers is essential for comparison of experience between populations at different times, different places, or among different classes of persons. The components of a rate are the numerator, the denominator, the specified time in which events occur, and usually a multiplier, a power of 10, that converts the rate from an awkward fraction or decimal to a whole number. In vital statistics, Rate= number of events in specified period / average population during the period
+In epidemiology, the denominator is usually person-time. All rates are ratios, calculated by dividing a numerator (e.g., the number of deaths or newly occurring cases of a disease in a given period) by a denominator (e.g., the average population during that period). Some rates are proportions, where the numerator is contained within the denominator. Rate has several different usages in epidemiology: 1. As a wrong synonym for ratio, it refers to proportions as rates, as in the terms cumulative incidence rate or survival rate. Proportion and ratio are not synonyms for rate. 2. In other situations, rate refers only to ratios representing relative changes (actual or potential) in two quantities. This accords with the Oxford English Dictionary, which gives relative amount of variationâ€ among its defi nitions for rate. 3. Sometimes rate is further restricted to refer only to ratios representing changes over time. In this sense, the term prevalence rate is to be avoided, because prevalence cannot (and does not need to) be expressed as a change in time; of course, different prevalence estimates may vary, change, and be compared. In contrast, the force of mortality and the force of morbidity (hazard rate) are proper rates, for they can be expressed as the number of cases developing per unit time divided by the total size of the population at risk.</obo:IAO_0000115>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TRANS_0000000 -->
+
+    <Class rdf:about="&obo;TRANS_0000000">
+        <rdfs:label>transmission of infection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&obo;RO_0002092"/>
+                <someValuesFrom rdf:resource="&epidemiology_ontology;EO:0000032"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0242781</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/MSH/Q000635</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/MSH/D018562</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Transmission</oboInOwl:hasDbXref>
+        <obo:IAO_0000118>transmission process</obo:IAO_0000118>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000182</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 xml:lang="en">Transmission of infectious agents. Any mechanism by which an infectious agent is spread from a source or reservoir to another person.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="&obo;trans.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TRANS_0000001 -->
+
+    <Class rdf:about="&obo;TRANS_0000001">
+        <rdfs:label>direct transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;TRANS_0000000"/>
+        <obo:IAO_0000115>Direct and essentially immediate transfer of infectious agents to a receptive portal of entry through which human or animal infection may take place. This may be by direct contact such as touching, kissing, biting, or sexual intercourse or by the direct projection (droplet spread) of droplet spray onto the conjunctiva or the mucous membranes of the eyes, nose, or mouth. It may also be by direct exposure of susceptible
+tissue to an agent in soil, compost, or decaying vegetable matter or by the bite of a rabid animal. Transplacental transmission is another form of direct transmission.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/MDR/10013045</oboInOwl:hasDbXref>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000183</oboInOwl:hasDbXref>
+        <obo:IAO_0000118>direct</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;trans.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TRANS_0000002 -->
+
+    <Class rdf:about="&obo;TRANS_0000002">
+        <rdfs:label>indirect transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;TRANS_0000000"/>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/MDR/10021714</oboInOwl:hasDbXref>
+        <obo:IAO_0000118>indirect</obo:IAO_0000118>
+        <oboInOwl:hasDbXref>http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000186</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Indirect_Contact_Transmission_Infection</oboInOwl:hasDbXref>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="&obo;trans.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TRANS_0000003 -->
+
+    <Class rdf:about="&obo;TRANS_0000003">
+        <rdfs:label>mechanical transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;TRANS_0000005"/>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000118>mechanical</obo:IAO_0000118>
+        <obo:IAO_0000115>Transmission of pathogens by a vector (e.g., a housefly) without biological development in or dependence on the vector. Many fecal-oral infections are spread by this means. Includes simple mechanical carriage by a crawling or flying insect through soiling of its feet or proboscis or by passage of organisms through its gastrointestinal tract. This does not require multiplication or development of the organism.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="&obo;trans.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TRANS_0000005 -->
+
+    <Class rdf:about="&obo;TRANS_0000005">
+        <rdfs:label>vector-borne transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;TRANS_0000002"/>
+        <obo:IAO_0000118>vector-borne</obo:IAO_0000118>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/MDR/10047176</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>Transmission by an infected nonvertebrate host must be differentiated for epidemiological purposes from simple mechanical carriage by a vector in the role of a vehicle. An arthropod in either role is termed a vector.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="&obo;trans.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TRANS_0000006 -->
+
+    <Class rdf:about="&obo;TRANS_0000006">
+        <rdfs:label>vertical transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;TRANS_0000001"/>
+        <obo:IAO_0000118>Pathogen Transmission, Vertical</obo:IAO_0000118>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/MSH/D018445</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/MDR/10047337</oboInOwl:hasDbXref>
+        <obo:IAO_0000118>Fetomaternal Infection Transmission</obo:IAO_0000118>
+        <obo:IAO_0000118>Infection Transmission, Maternal Fetal</obo:IAO_0000118>
+        <obo:IAO_0000118>Infection Transmission, Vertical</obo:IAO_0000118>
+        <obo:IAO_0000118>Maternal Fetal Infection Transmission</obo:IAO_0000118>
+        <obo:IAO_0000118>Maternal-Fetal Infection Transmission</obo:IAO_0000118>
+        <obo:IAO_0000118>Infection Transmission, Fetomaternal</obo:IAO_0000118>
+        <obo:IAO_0000118>Transmission, Maternal-Fetal Infection</obo:IAO_0000118>
+        <obo:IAO_0000118>congenital</obo:IAO_0000118>
+        <obo:IAO_0000115>The transmission of infection from one generation to the next, especially of HIV infection from mother to infant prenatally, during delivery, or in the postnatal period via breast milk.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Maternal_Transmission</oboInOwl:hasDbXref>
+        <obo:IAO_0000118>Vertical Infection Transmission</obo:IAO_0000118>
+        <obo:IAO_0000118>Vertical Infectious Disease Transmission</obo:IAO_0000118>
+        <obo:IAO_0000118>Vertical Transmission of Infectious Disease</obo:IAO_0000118>
+        <obo:IAO_0000118>intergenerational transmission</obo:IAO_0000118>
+        <obo:IAO_0000118>Infection Transmission, Maternal-Fetal</obo:IAO_0000118>
+        <obo:IAO_0000118>Transmission, Vertical Pathogen</obo:IAO_0000118>
+        <obo:IAO_0000118>Vertical Pathogen Transmission</obo:IAO_0000118>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>UMLS:C0242648</oboInOwl:hasDbXref>
+        <obo:IAO_0000118>Transmission, Fetomaternal Infection</obo:IAO_0000118>
+        <obo:IAO_0000118>Transmission, Vertical Infection</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;trans.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TRANS_0000007 -->
+
+    <Class rdf:about="&obo;TRANS_0000007">
+        <rdfs:label>direct contact transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;TRANS_0000001"/>
+        <obo:IAO_0000118>contact</obo:IAO_0000118>
+        <obo:IAO_0000115>touching, kissing, biting, or sexual intercourse</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/MDR/10021869</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>A mode of transmission of infection between an infected host and a susceptible host. Direct contact occurs when skin or mucous surfaces touch, as in shaking hands, kissing, and sexual intercourse.</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Direct_Contact_Transmission_Infection</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000184</oboInOwl:hasDbXref>
+        <obo:IAO_0000412 rdf:resource="&obo;trans.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TRANS_0000008 -->
+
+    <Class rdf:about="&obo;TRANS_0000008">
+        <rdfs:label>direct projection transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;TRANS_0000001"/>
+        <obo:IAO_0000118>droplet spread transmission</obo:IAO_0000118>
+        <oboInOwl:hasDbXref>http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000185</oboInOwl:hasDbXref>
+        <obo:IAO_0000118>droplet spread</obo:IAO_0000118>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <obo:IAO_0000115>projection (droplet spread) of droplet spray onto the conjunctiva or the mucous membranes of the eyes, nose, or mouth.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="&obo;trans.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TRANS_0000009 -->
+
+    <Class rdf:about="&obo;TRANS_0000009">
+        <rdfs:label>airborne transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;TRANS_0000002"/>
+        <oboInOwl:hasDbXref>http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000187</oboInOwl:hasDbXref>
+        <obo:IAO_0000118>airborne</obo:IAO_0000118>
+        <obo:IAO_0000115>The dissemination of microbial aerosols to a portal of entry, usually the respiratory tract. Microbial aerosols are suspensions in the air of particles consisting partially or wholly of microorganisms. Particles in the range of 1 to 5 Î¼m are easily drawn
+into the alveoli of the lungs and may be retained there. They may remain suspended in the air for long periods.</obo:IAO_0000115>
+        <obo:IAO_0000119>Dictionary of Epidemiology, Miquel Porta (Ed.)</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/MDR/10001534</oboInOwl:hasDbXref>
+        <obo:IAO_0000412 rdf:resource="&obo;trans.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TRANS_0000010 -->
+
+    <Class rdf:about="&obo;TRANS_0000010">
+        <rdfs:label rdf:datatype="&xsd;string">vehicle-borne</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;TRANS_0000002"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">
+Vehicle-borne transmission is an indirect transmission process during which the pathogen is indirectly transferred from a reservoir, source or host to another host by inanimate intermediary vehicle objects.
+</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">TRANS:0000010</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">transmission_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;trans.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TRANS_0000011 -->
+
+    <Class rdf:about="&obo;TRANS_0000011">
+        <rdfs:label rdf:datatype="&xsd;string">vehicle-borne fomite</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;TRANS_0000010"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">
+Vehicle-borne fomite transmission is an indirect vehicle-borne transmission process during which the pathogen is indirectly transferred from a reservoir, source or host to another host by inanimate objects including: medical instruments, cloth, fur, metal or plastic utensils.
+</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">TRANS:0000011</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">transmission_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;trans.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TRANS_0000012 -->
+
+    <Class rdf:about="&obo;TRANS_0000012">
+        <rdfs:label rdf:datatype="&xsd;string">vehicle-borne ingestion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;TRANS_0000010"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">
+Vehicle-borne ingestion transmission is an indirect vehicle-borne transmission process during which the pathogen is indirectly transferred from a reservoir, source or host to another host by ingestion of fluids or foods or food products including: food, water, milk, or meat products.
+</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">TRANS:0000012</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">transmission_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;trans.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TRANS_0000013 -->
+
+    <Class rdf:about="&obo;TRANS_0000013">
+        <rdfs:label rdf:datatype="&xsd;string">vehicle-borne medical</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;TRANS_0000010"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">
+Vehicle-borne medical transmission is an indirect vehicle-borne transmission process during which the pathogen is indirectly transferred from a reservoir, source or host to another host by biological products including: blood, serum, plasma, tissue, or organs.
+</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">TRANS:0000013</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">transmission_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;trans.owl"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TRANS_0000018 -->
+
+    <Class rdf:about="&obo;TRANS_0000018">
+        <rdfs:label rdf:datatype="&xsd;string">placental</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;TRANS_0000006"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">
+Placental transmission is a congenital transmission process during which the pathogen is transmitted directly from mother to child across the placental barrier.
+</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">TRANS:0000018</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">transmission_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;trans.owl"/>
+    </Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1#Entity -->
+
+    <Class rdf:about="&bfo;Entity">
+        <rdfs:label rdf:datatype="&xsd;string">entity</rdfs:label>
+        <equivalentClass>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&snap;Continuant"/>
+                    <rdf:Description rdf:about="&span;Occurrent"/>
+                </unionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Continuant -->
+
+    <Class rdf:about="&snap;Continuant">
+        <rdfs:label rdf:datatype="&xsd;string">continuant</rdfs:label>
+        <equivalentClass>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&snap;DependentContinuant"/>
+                    <rdf:Description rdf:about="&snap;IndependentContinuant"/>
+                    <rdf:Description rdf:about="&snap;SpatialRegion"/>
+                </unionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&bfo;Entity"/>
+        <disjointWith rdf:resource="&span;Occurrent"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: An entity [bfo:Entity] that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: a heart, a person, the color of a tomato, the mass of a cloud, a symphony orchestra, the disposition of blood to coagulate, the lawn and atmosphere in front of our building</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Synonyms: endurant</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#DependentContinuant -->
+
+    <Class rdf:about="&snap;DependentContinuant">
+        <rdfs:label rdf:datatype="&xsd;string">dependent_continuant</rdfs:label>
+        <equivalentClass>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&snap;GenericallyDependentContinuant"/>
+                    <rdf:Description rdf:about="&snap;SpecificallyDependentContinuant"/>
+                </unionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&snap;Continuant"/>
+        <disjointWith rdf:resource="&snap;IndependentContinuant"/>
+        <disjointWith rdf:resource="&snap;SpatialRegion"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A continuant [snap:Continuant] that is either dependent on one or other independent continuant [snap:IndependentContinuant] bearers or inheres in or is borne by other entities.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Disposition -->
+
+    <Class rdf:about="&snap;Disposition">
+        <rdfs:label rdf:datatype="&xsd;string">disposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;RealizableEntity"/>
+        <disjointWith rdf:resource="&snap;Function"/>
+        <disjointWith rdf:resource="&snap;Role"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A realizable entity [snap:RealizableEntity] that essentially causes a specific process or transformation in the object [snap:Object] in which it inheres, under specific circumstances and in conjunction with the laws of nature. A general formula for dispositions is: X (object [snap:Object] has the disposition D to (transform, initiate a process) R under conditions C.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: the disposition of vegetables to decay when not refrigerated, the disposition of a vase to brake if dropped, the disposition of blood to coagulate, the disposition of a patient with a weakened immune system to contract disease, the disposition of metal to conduct electricity.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#FiatObjectPart -->
+
+    <Class rdf:about="&snap;FiatObjectPart">
+        <rdfs:label rdf:datatype="&xsd;string">fiat_object_part</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
+        <disjointWith rdf:resource="&snap;Object"/>
+        <disjointWith rdf:resource="&snap;ObjectAggregate"/>
+        <disjointWith rdf:resource="&snap;ObjectBoundary"/>
+        <disjointWith rdf:resource="&snap;Site"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A material entity [snap:MaterialEntity] that is part of an object [snap:Object] but is not demarcated by any physical discontinuities.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: upper and lower lobes of the left lung, the dorsal and ventral surfaces of the body, the east side of Saarbruecken, the lower right portion of a human torso</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Synonyms: fiat substance part</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Function -->
+
+    <Class rdf:about="&snap;Function">
+        <rdfs:label rdf:datatype="&xsd;string">function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;RealizableEntity"/>
+        <disjointWith rdf:resource="&snap;Role"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A realizable entity [snap:RealizableEntity] the manifestation of which is an essentially end-directed activity of a continuant [snap:Continuant] entity in virtue of that continuant [snap:Continuant] entity being a specific kind of entity in the kind or kinds of contexts that it is made for.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: the function of a birth canal to enable transport, the function of the heart in the body: to pump blood, to receive de-oxygenated and oxygenated blood, etc., the function of reproduction in the transmission of genetic material, the digestive function of the stomach to nutriate the body, the function of a hammer to drive in nails, the function of a computer program to compute mathematical equations, the function of an automobile to provide transportation, the function of a judge in a court of law</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant -->
+
+    <Class rdf:about="&snap;GenericallyDependentContinuant">
+        <rdfs:label rdf:datatype="&xsd;string">generically_dependent_continuant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;DependentContinuant"/>
+        <disjointWith rdf:resource="&snap;SpecificallyDependentContinuant"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A continuant [snap:Continuant] that is dependent on one or other independent continuant [snap:IndependentContinuant] bearers. For every instance of A requires some instance of (an independent continuant [snap:IndependentContinuant] type) B but which instance of B serves can change from time to time.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: a certain PDF file that exists in different and in several hard drives</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant -->
+
+    <Class rdf:about="&snap;IndependentContinuant">
+        <rdfs:label rdf:datatype="&xsd;string">independent_continuant</rdfs:label>
+        <equivalentClass>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&snap;MaterialEntity"/>
+                    <rdf:Description rdf:about="&snap;ObjectBoundary"/>
+                    <rdf:Description rdf:about="&snap;Site"/>
+                </unionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&snap;Continuant"/>
+        <disjointWith rdf:resource="&snap;SpatialRegion"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A continuant [snap:Continuant] that is a bearer of quality [snap:Quality] and realizable entity [snap:RealizableEntity] entities, in which other entities inhere and which itself cannot inhere in anything.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: an organism, a heart, a leg, a person, a symphony orchestra, a chair, the bottom right portion of a human torso, the lawn and atmosphere in front of our building</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Synonyms: substantial entity</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#MaterialEntity -->
+
+    <Class rdf:about="&snap;MaterialEntity">
+        <rdfs:label rdf:datatype="&xsd;string">material_entity</rdfs:label>
+        <equivalentClass>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&snap;FiatObjectPart"/>
+                    <rdf:Description rdf:about="&snap;Object"/>
+                    <rdf:Description rdf:about="&snap;ObjectAggregate"/>
+                </unionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&snap;IndependentContinuant"/>
+        <disjointWith rdf:resource="&snap;ObjectBoundary"/>
+        <disjointWith rdf:resource="&snap;Site"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: An independent continuant [snap:IndependentContinuant] that is spatially extended whose identity is independent of that of other entities and can be maintained through time. Note: Material entity [snap:MaterialEntity] subsumes object [snap:Object], fiat object part [snap:FiatObjectPart], and object aggregate [snap:ObjectAggregate], which assume a three level theory of granularity, which is inadequate for some domains, such as biology.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: collection of random bacteria, a chair, dorsal surface of the body</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Object -->
+
+    <Class rdf:about="&snap;Object">
+        <rdfs:label rdf:datatype="&xsd;string">object</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
+        <disjointWith rdf:resource="&snap;ObjectAggregate"/>
+        <disjointWith rdf:resource="&snap;ObjectBoundary"/>
+        <disjointWith rdf:resource="&snap;Site"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A material entity [snap:MaterialEntity] that is spatially extended, maximally self-connected and self-contained (the parts of a substance are not separated from each other by spatial gaps) and possesses an internal unity. The identity of substantial object [snap:Object] entities is independent of that of other entities and can be maintained through time.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: an organism, a heart, a chair, a lung, an apple</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Synonyms: substance</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate -->
+
+    <Class rdf:about="&snap;ObjectAggregate">
+        <rdfs:label rdf:datatype="&xsd;string">object_aggregate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
+        <disjointWith rdf:resource="&snap;ObjectBoundary"/>
+        <disjointWith rdf:resource="&snap;Site"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A material entity [snap:MaterialEntity] that is a mereological sum of separate object [snap:Object] entities and possesses non-connected boundaries.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: a heap of stones, a group of commuters on the subway, a collection of random bacteria, a flock of geese, the patients in a hospital</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Synonyms: substance aggregate</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#ObjectBoundary -->
+
+    <Class rdf:about="&snap;ObjectBoundary">
+        <rdfs:label rdf:datatype="&xsd;string">object_boundary</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;IndependentContinuant"/>
+        <disjointWith rdf:resource="&snap;Site"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Comment: Boundaries are theoretically difficult entities to account for, however the intuitive notion of a physical boundary as a surface of some sort (whether inside or outside of a thing) will generally serve as a good guide for the use of this universal.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: An independent continuant [snap:IndependentContinuant] that is a lower dimensional part of a spatial entity, normally a closed two-dimensional surface. Boundaries are those privileged parts of object [snap:Object] entities that exist at exactly the point where the object [snap:Object] is separated off from the rest of the existing entities in the world.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: the surface of the skin, the surface of the earth, the surface of the interior of the stomach, the outer surface of a cell or cell wall</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Synonyms: substance boundary</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#OneDimensionalRegion -->
+
+    <Class rdf:about="&snap;OneDimensionalRegion">
+        <rdfs:label rdf:datatype="&xsd;string">one_dimensional_region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;SpatialRegion"/>
+        <disjointWith rdf:resource="&snap;ThreeDimensionalRegion"/>
+        <disjointWith rdf:resource="&snap;TwoDimensionalRegion"/>
+        <disjointWith rdf:resource="&snap;ZeroDimensionalRegion"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A spatial region [snap:SpatialRegion] with one dimension.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: the part of space that is a line stretching from one end of absolute space to the other, an edge of a cube-shaped part of space</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Quality -->
+
+    <Class rdf:about="&snap;Quality">
+        <rdfs:label rdf:datatype="&xsd;string">quality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;SpecificallyDependentContinuant"/>
+        <disjointWith rdf:resource="&snap;RealizableEntity"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A specifically dependent continuant [snap:SpecificallyDependentContinuant] that is exhibited if it inheres in an entity or entities at all (a categorical property).</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: the color of a tomato, the ambient temperature of air, the circumference of a waist, the shape of a nose, the mass of a piece of gold, the weight of a chimpanzee</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#RealizableEntity -->
+
+    <Class rdf:about="&snap;RealizableEntity">
+        <rdfs:label rdf:datatype="&xsd;string">realizable_entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;SpecificallyDependentContinuant"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Comment: If a realizable entity [snap:RealizableEntity] inheres in a continuant [snap:Continuant], this does not imply that it is actually realized.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A specifically dependent continuant [snap:SpecificallyDependentContinuant] that inheres in continuant [snap:Continuant] entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: the role of being a doctor, the function of the reproductive organs, the disposition of blood to coagulate, the disposition of metal to conduct electricity</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Role -->
+
+    <Class rdf:about="&snap;Role">
+        <rdfs:label rdf:datatype="&xsd;string">role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;RealizableEntity"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A realizable entity [snap:RealizableEntity] the manifestation of which brings about some result or end that is not essential to a continuant [snap:Continuant] in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant [snap:Continuant] in some kinds of natural, social or institutional contexts.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: the role of a person as a surgeon, the role of a chemical compound in an experiment, the role of a patient relative as defined by a hospital administrative form, the role of a woman as a legal mother in the context of system of laws, the role of a biological grandfather as legal guardian in the context of a system of laws, the role of ingested matter in digestion, the role of a student in a university</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Site -->
+
+    <Class rdf:about="&snap;Site">
+        <rdfs:label rdf:datatype="&xsd;string">site</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;IndependentContinuant"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Comment: An instance of Site [snap:Site] is a mixture of independent continuant [snap:IndependentContinuant] entities which act as surrounding environments for other independent continuant [snap:IndependentContinuant] entities, most importantly for instances of object [snap:Object]. A site [snap:Site] is typically made of object [snap:Object] or fiat object part [snap:FiatObjectPart] entities and a surrounding medium in which is found an object [snap:Object] occupying the site [snap:Site]. Independent continuant [snap:IndependentContinuant] entities may be associated with others (which, then, are site [snap:Site] entities) through a relation of &quot;occupation&quot;. That relation is connected to, but distinct from, the relation of spatial location. Site [snap:Site] entities are not to be confused with spatial region [snap:SpatialRegion] entities. In bfo, site [snap:Site] allows for a so-called relational view of space which is different from the view corresponding to the class spatial region [snap:SpatialRegion] (see the comment on this class).</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: An independent continuant [snap:IndependentContinuant] consisting of a characteristic spatial shape in relation to some arrangement of other continuant [snap:Continuant] entities and of the medium which is enclosed in whole or in part by this characteristic spatial shape. Site [snap:Site] entities are entities that can be occupied by other continuant [snap:Continuant] entities.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: a particular room in a particular hospital, Maria&#39;s nostril or her intestines for a variety of bacteria.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#SpatialRegion -->
+
+    <Class rdf:about="&snap;SpatialRegion">
+        <rdfs:label rdf:datatype="&xsd;string">spatial_region</rdfs:label>
+        <equivalentClass>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&snap;OneDimensionalRegion"/>
+                    <rdf:Description rdf:about="&snap;ThreeDimensionalRegion"/>
+                    <rdf:Description rdf:about="&snap;TwoDimensionalRegion"/>
+                    <rdf:Description rdf:about="&snap;ZeroDimensionalRegion"/>
+                </unionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&snap;Continuant"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Comment: All instances of continuant [snap:Continuant] are spatial entities, that is, they enter in the relation of (spatial) location with spatial region [snap:SpatialRegion] entities. As a particular case, the exact spatial location of a spatial region [snap:SpatialRegion] is this region itself.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Comment: An instance of spatial region [snap:SpatialRegion] is a part of space. All parts of space are spatial region [snap:SpatialRegion] entities and only spatial region [snap:SpatialRegion] entities are parts of space. Space is the entire extent of the spatial universe, a designated individual, which is thus itself a spatial region [snap:SpatialRegion].</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Comment: Space and spatial region [snap:SpatialRegion] entities are entities in their own rights which exist independently of any entities which can be located at them. This view of space is sometimes called &quot;absolutist&quot; or &quot;the container view&quot;. In bfo, the class site [snap:Site] allows for a so-called relational view of space, that is to say, a view according to which spatiality is a matter of relative location between entities and not a matter of being tied to space. The bridge between these two views is secured through the fact that while instances of site [snap:Site] are not spatial region [snap:SpatialRegion] entities, they are nevertheless spatial entities.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A continuant [snap:Continuant] that is neither bearer of quality [snap:Quality] entities nor inheres in any other entities.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: the sum total of all space in the universe, parts of the sum total of all space in the universe</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant -->
+
+    <Class rdf:about="&snap;SpecificallyDependentContinuant">
+        <rdfs:label rdf:datatype="&xsd;string">specifically_dependent_continuant</rdfs:label>
+        <equivalentClass>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&snap;Quality"/>
+                    <rdf:Description rdf:about="&snap;RealizableEntity"/>
+                </unionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&snap;DependentContinuant"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A continuant [snap:Continuant] that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: the mass of a cloud, the smell of mozzarella, the liquidity of blood, the color of a tomato, the disposition of fish to decay, the role of being a doctor, the function of the heart in the body: to pump blood, to receive de-oxygenated and oxygenated blood, etc.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Synonyms: property, trope, mode</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#ThreeDimensionalRegion -->
+
+    <Class rdf:about="&snap;ThreeDimensionalRegion">
+        <rdfs:label rdf:datatype="&xsd;string">three_dimensional_region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;SpatialRegion"/>
+        <disjointWith rdf:resource="&snap;TwoDimensionalRegion"/>
+        <disjointWith rdf:resource="&snap;ZeroDimensionalRegion"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A spatial region [snap:SpatialRegion] with three dimensions.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: a cube-shaped part of space, a sphere-shaped part of space</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#TwoDimensionalRegion -->
+
+    <Class rdf:about="&snap;TwoDimensionalRegion">
+        <rdfs:label rdf:datatype="&xsd;string">two_dimensional_region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;SpatialRegion"/>
+        <disjointWith rdf:resource="&snap;ZeroDimensionalRegion"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A spatial region [snap:SpatialRegion] with two dimensions.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: the surface of a cube-shaped part of space, the surface of a sphere-shaped part of space, the surface of a rectilinear planar figure-shaped part of space</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#ZeroDimensionalRegion -->
+
+    <Class rdf:about="&snap;ZeroDimensionalRegion">
+        <rdfs:label rdf:datatype="&xsd;string">zero_dimensional_region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;SpatialRegion"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A spatial region [snap:SpatialRegion] with no dimensions.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: a point</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.infomis.org/bfo/1.1/span#ConnectedSpatiotemporalRegion -->
+
+    <Class rdf:about="&span;ConnectedSpatiotemporalRegion">
+        <rdfs:label rdf:datatype="&xsd;string">connected_spatiotemporal_region</rdfs:label>
+        <equivalentClass>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&span;SpatiotemporalInstant"/>
+                    <rdf:Description rdf:about="&span;SpatiotemporalInterval"/>
+                </unionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&span;SpatiotemporalRegion"/>
+        <disjointWith rdf:resource="&span;ScatteredSpatiotemporalRegion"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A spatiotemporal region [span:SpatiotemporalRegion] that has temporal and spatial dimensions such that all points within the spatiotemporal region are mediately or immediately connected to all other points within the same spatiotemporal region [span:SpatiotemporalRegion].</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: the spatial and temporal location of an individual organism&#39;s life, the spatial and temporal location of the development of a fetus</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.infomis.org/bfo/1.1/span#ConnectedTemporalRegion -->
+
+    <Class rdf:about="&span;ConnectedTemporalRegion">
+        <rdfs:label rdf:datatype="&xsd;string">connected_temporal_region</rdfs:label>
+        <equivalentClass>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&span;TemporalInstant"/>
+                    <rdf:Description rdf:about="&span;TemporalInterval"/>
+                </unionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&span;TemporalRegion"/>
+        <disjointWith rdf:resource="&span;ScatteredTemporalRegion"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A temporal region [span:TemporalRegion] every point of which is mediately or immediately connected with every other point of which.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: the 1970s years, the time from the beginning to the end of a heart attack, the time taken up by cellular meiosis</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.infomis.org/bfo/1.1/span#FiatProcessPart -->
+
+    <Class rdf:about="&span;FiatProcessPart">
+        <rdfs:label rdf:datatype="&xsd;string">fiat_process_part</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <disjointWith rdf:resource="&span;Process"/>
+        <disjointWith rdf:resource="&span;ProcessAggregate"/>
+        <disjointWith rdf:resource="&span;ProcessBoundary"/>
+        <disjointWith rdf:resource="&span;ProcessualContext"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A processual entity [span:ProcessualEntity] that is part of a process but that does not have bona fide beginnings and endings corresponding to real discontinuities.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: chewing during a meal, the middle part of a rainstorm, the worst part of a heart-attack, the most interesting part of Van Gogh&#39;s life</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.infomis.org/bfo/1.1/span#Occurrent -->
+
+    <Class rdf:about="&span;Occurrent">
+        <rdfs:label rdf:datatype="&xsd;string">occurrent</rdfs:label>
+        <equivalentClass>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&span;ProcessualEntity"/>
+                    <rdf:Description rdf:about="&span;SpatiotemporalRegion"/>
+                    <rdf:Description rdf:about="&span;TemporalRegion"/>
+                </unionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&bfo;Entity"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: An entity [bfo:Entity] that has temporal parts and that happens, unfolds or develops through time. Sometimes also called perdurants.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: the life of an organism, a surgical operation as processual context for a nosocomical infection, the spatiotemporal context occupied by a process of cellular meiosis, the most interesting part of Van Gogh&#39;s life, the spatiotemporal region occupied by the development of a cancer tumor</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Synonyms: perdurant</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.infomis.org/bfo/1.1/span#Process -->
+
+    <Class rdf:about="&span;Process">
+        <rdfs:label rdf:datatype="&xsd;string">process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <disjointWith rdf:resource="&span;ProcessAggregate"/>
+        <disjointWith rdf:resource="&span;ProcessBoundary"/>
+        <disjointWith rdf:resource="&span;ProcessualContext"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A processual entity [span:ProcessualEntity] that is a maximally connected spatiotemporal whole and has bona fide beginnings and endings corresponding to real discontinuities.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: the life of an organism, the process of sleeping, the process of cell-division</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.infomis.org/bfo/1.1/span#ProcessAggregate -->
+
+    <Class rdf:about="&span;ProcessAggregate">
+        <rdfs:label rdf:datatype="&xsd;string">process_aggregate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <disjointWith rdf:resource="&span;ProcessBoundary"/>
+        <disjointWith rdf:resource="&span;ProcessualContext"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A processual entity [span:ProcessualEntity] that is a mereological sum of process [span:Process] entities and possesses non-connected boundaries.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: the beating of the hearts of each of seven individuals in the room, the playing of each of the members of an orchestra, a process of digestion and a process of thinking taken together</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.infomis.org/bfo/1.1/span#ProcessBoundary -->
+
+    <Class rdf:about="&span;ProcessBoundary">
+        <rdfs:label rdf:datatype="&xsd;string">process_boundary</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <disjointWith rdf:resource="&span;ProcessualContext"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A processual entity [span:ProcessualEntity] that is the fiat or bona fide instantaneous temporal process boundary.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: birth, death, the forming of a synapse, the onset of REM sleep, the detaching of a finger in an industrial accident, the final separation of two cells at the end of cell-division, the incision at the beginning of a surgery</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.infomis.org/bfo/1.1/span#ProcessualContext -->
+
+    <Class rdf:about="&span;ProcessualContext">
+        <rdfs:label rdf:datatype="&xsd;string">processual_context</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Comment: An instance of a processual context [span:ProcessualContext] is a mixture of processual entity [span:ProcessualEntity] which stand as surrounding environments for other processual entity [span:ProcessualEntity] entities. The class processual context [span:ProcessualContext] is the analogous among occurrent [span:Occurrent] entities to the class site [snap:Site] among continuant [snap:Continuant] entities.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: An occurrent [span:Occurrent] consisting of a characteristic spatial shape inhering in some arrangement of other occurrent [span:Occurrent] entities. Processual context [span:ProcessualContext] entities are characteristically entities at or in which other occurrent [span:Occurrent] entities can be located or occur.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: The processual context for a given manipulation occurring as part of an experiment is made of processual entities which occur in parallel, are not necessarily all parts of the experiment themselves and may involve continuant [snap:Continuant] entities which are in the spatial vicinity of the participants in the experiment.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.infomis.org/bfo/1.1/span#ProcessualEntity -->
+
+    <Class rdf:about="&span;ProcessualEntity">
+        <rdfs:label rdf:datatype="&xsd;string">processual_entity</rdfs:label>
+        <equivalentClass>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&span;FiatProcessPart"/>
+                    <rdf:Description rdf:about="&span;Process"/>
+                    <rdf:Description rdf:about="&span;ProcessAggregate"/>
+                    <rdf:Description rdf:about="&span;ProcessBoundary"/>
+                    <rdf:Description rdf:about="&span;ProcessualContext"/>
+                </unionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&span;Occurrent"/>
+        <disjointWith rdf:resource="&span;SpatiotemporalRegion"/>
+        <disjointWith rdf:resource="&span;TemporalRegion"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: An occurrent [span:Occurrent] that exists in time by occurring or happening, has temporal parts and always involves and depends on some entity.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: the life of an organism, the process of meiosis, the course of a disease, the flight of a bird</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.infomis.org/bfo/1.1/span#ScatteredSpatiotemporalRegion -->
+
+    <Class rdf:about="&span;ScatteredSpatiotemporalRegion">
+        <rdfs:label rdf:datatype="&xsd;string">scattered_spatiotemporal_region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;SpatiotemporalRegion"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A spatiotemporal region [span:SpatiotemporalRegion] that has spatial and temporal dimensions and every spatial and temporal point of which is not connected with every other spatial and temporal point of which.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: the space and time occupied by the individual games of the World Cup, the space and time occupied by the individual liaisons in a romantic affair</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.infomis.org/bfo/1.1/span#ScatteredTemporalRegion -->
+
+    <Class rdf:about="&span;ScatteredTemporalRegion">
+        <rdfs:label rdf:datatype="&xsd;string">scattered_temporal_region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;TemporalRegion"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A temporal region [span:TemporalRegion] every point of which is not mediately or immediately connected with every other point of which.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: the time occupied by the individual games of the World Cup, the time occupied by the individual liaisons in a romantic affair</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.infomis.org/bfo/1.1/span#SpatiotemporalInstant -->
+
+    <Class rdf:about="&span;SpatiotemporalInstant">
+        <rdfs:label rdf:datatype="&xsd;string">spatiotemporal_instant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ConnectedSpatiotemporalRegion"/>
+        <disjointWith rdf:resource="&span;SpatiotemporalInterval"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A connected spatiotemporal region [span:ConnectedSpatiotemporalRegion] at a specific moment.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: the spatiotemporal region occupied by a single instantaneous temporal slice (part) of a process</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.infomis.org/bfo/1.1/span#SpatiotemporalInterval -->
+
+    <Class rdf:about="&span;SpatiotemporalInterval">
+        <rdfs:label rdf:datatype="&xsd;string">spatiotemporal_interval</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ConnectedSpatiotemporalRegion"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A connected spatiotemporal region [span:ConnectedSpatiotemporalRegion] that endures for more than a single moment of time.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: the spatiotemporal region occupied by a process or by a fiat processual part</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.infomis.org/bfo/1.1/span#SpatiotemporalRegion -->
+
+    <Class rdf:about="&span;SpatiotemporalRegion">
+        <rdfs:label rdf:datatype="&xsd;string">spatiotemporal_region</rdfs:label>
+        <equivalentClass>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&span;ConnectedSpatiotemporalRegion"/>
+                    <rdf:Description rdf:about="&span;ScatteredSpatiotemporalRegion"/>
+                </unionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&span;Occurrent"/>
+        <disjointWith rdf:resource="&span;TemporalRegion"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Comment: All instances of occurrent [span:Occurrent] are spatiotemporal entities, that is, they enter in the relation of (spatiotemporal) location with spatiotemporal region [span:SpatiotemporalRegion] entities. As a particular case, the exact spatiotemporal location of a spatiotemporal region [span:SpatiotemporalRegion] is this region itself.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Comment: An instance of the spatiotemporal region [span:SpatiotemporalRegion] is a part of spacetime. All parts of spacetime are spatiotemporal region [span:SpatiotemporalRegion] entities and only spatiotemporal region [span:SpatiotemporalRegion] entities are parts of spacetime. In particular, neither spatial region [snap:SpatialRegion] entities nor temporal region [span:TemporalRegion] entities are in bfo parts of spacetime. Spacetime is the entire extent of the spatiotemporal universe, a designated individual, which is thus itself a spatiotemporal region [span:SpatiotemporalRegion]. Spacetime is among occurrents the analogous of space among continuant [snap:Continuant] entities.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Comment: Spacetime and spatiotemporal region [span:SpatiotemporalRegion] entities are entities in their own rights which exist independently of any entities which can be located at them. This view of spacetime can be called &quot;absolutist&quot; or &quot;the container view&quot;. In bfo, the class processual context [span:ProcessualContext] allows for a so-called relational view of spacetime, that is to say, a view according to which spatiotemporality is a matter of relative location between entities and not a matter of being tied to spacetime. In bfo, the bridge between these two views is secured through the fact that instances of processual context [span:ProcessualContext] are too spatiotemporal entities.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: An occurrent [span:Occurrent] at or in which processual entity [span:ProcessualEntity] entities can be located.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: the spatiotemporal region occupied by a human life, the spatiotemporal region occupied by the development of a cancer tumor, the spatiotemporal context occupied by a process of cellular meiosis</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.infomis.org/bfo/1.1/span#TemporalInstant -->
+
+    <Class rdf:about="&span;TemporalInstant">
+        <rdfs:label rdf:datatype="&xsd;string">temporal_instant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ConnectedTemporalRegion"/>
+        <disjointWith rdf:resource="&span;TemporalInterval"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A connected temporal region [span:ConnectedTemporalRegion] comprising a single moment of time.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: right now, the moment at which a finger is detached in an industrial accident, the moment at which a child is born, the moment of death</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.infomis.org/bfo/1.1/span#TemporalInterval -->
+
+    <Class rdf:about="&span;TemporalInterval">
+        <rdfs:label rdf:datatype="&xsd;string">temporal_interval</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ConnectedTemporalRegion"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A connected temporal region [span:ConnectedTemporalRegion] lasting for more than a single moment of time.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: any continuous temporal duration during which a process occurs</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.infomis.org/bfo/1.1/span#TemporalRegion -->
+
+    <Class rdf:about="&span;TemporalRegion">
+        <rdfs:label rdf:datatype="&xsd;string">temporal_region</rdfs:label>
+        <equivalentClass>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&span;ConnectedTemporalRegion"/>
+                    <rdf:Description rdf:about="&span;ScatteredTemporalRegion"/>
+                </unionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&span;Occurrent"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Comment: All instances of occurrent [span:Occurrent] are temporal entities, that is, they enter in the relation of (temporal) location with temporal region [span:TemporalRegion] entities. As a particular case, the exact spatiotemporal location of a temporal region [span:TemporalRegion] is this region itself. Continuant [snap:Continuant] entities are not temporal entities in the technical sense just explained; they are related to time in a different way, not through temporal location but through a relation of existence at a time or during a period of time (see continuant [snap:Continuant].</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Comment: An instance of temporal region [span:TemporalRegion] is a part of time. All parts of time are temporal region [span:TemporalRegion] entities and only temporal region [span:TemporalRegion] entities are parts of time. Time is the entire extent of the temporal universe, a designated individual, which is thus a temporal region itself.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Comment: Time and temporal region [span:TemporalRegion] entities are entities in their own rights which exist independently of any entities which can be located at them. This view of time can be called &quot;absolutist&quot; or &quot;the container view&quot; in analogy to what is traditionally the case with space (see spatial region [snap:SpatialRegion].</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: An occurrent [span:Occurrent] that is part of time.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: the time it takes to run a marathon, the duration of a surgical procedure, the moment of death</rdfs:comment>
+    </Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
